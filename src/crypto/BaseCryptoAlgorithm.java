@@ -8,6 +8,7 @@ import javax.crypto.Cipher;
 public abstract class BaseCryptoAlgorithm {
     Cipher cipher;
 
-    protected abstract void encrypt(String inPath, String keyPath, String outPath, Object... otherConfiguration);
+    public abstract void doAction(ActionType actionType, String inPath, String keyPath, String outPath, Object... otherConfiguration);
+    protected abstract byte[] encrypt(byte[] in, byte[] key, byte[] out, Object... otherConfiguration);
     protected abstract void decrypt(String inPath, String keyPath, String outPath, Object... otherConfiguration);
 }

@@ -1,0 +1,1980 @@
+DUMP OF SERVICE package:
+  Activity Resolver Table:
+    Full MIME Types:
+        text/*:
+          24a34b78 com.zing.zalo/.ui.TempShareViaActivity filter 1ccc4b14
+            Action: "android.intent.action.SEND"
+            Action: "android.intent.action.SEND_MULTIPLE"
+            Action: "com.zing.zalo.intent.action.SEND"
+            Category: "android.intent.category.BROWSABLE"
+            Category: "android.intent.category.DEFAULT"
+            Type: "text"
+            Type: "image"
+            Type: "video"
+            Type: "*"
+            mPriority=0, mHasPartialTypes=true
+        */*:
+          24a34b78 com.zing.zalo/.ui.TempShareViaActivity filter 1ccc4b14
+            Action: "android.intent.action.SEND"
+            Action: "android.intent.action.SEND_MULTIPLE"
+            Action: "com.zing.zalo.intent.action.SEND"
+            Category: "android.intent.category.BROWSABLE"
+            Category: "android.intent.category.DEFAULT"
+            Type: "text"
+            Type: "image"
+            Type: "video"
+            Type: "*"
+            mPriority=0, mHasPartialTypes=true
+        vnd.android.cursor.item/com.zing.zalo.message:
+          24a34b78 com.zing.zalo/.ui.TempShareViaActivity filter 27543fbd
+            Action: "android.intent.action.VIEW"
+            Category: "android.intent.category.DEFAULT"
+            Type: "vnd.android.cursor.item/com.zing.zalo.call"
+            Type: "vnd.android.cursor.item/com.zing.zalo.message"
+        video/*:
+          24a34b78 com.zing.zalo/.ui.TempShareViaActivity filter 1ccc4b14
+            Action: "android.intent.action.SEND"
+            Action: "android.intent.action.SEND_MULTIPLE"
+            Action: "com.zing.zalo.intent.action.SEND"
+            Category: "android.intent.category.BROWSABLE"
+            Category: "android.intent.category.DEFAULT"
+            Type: "text"
+            Type: "image"
+            Type: "video"
+            Type: "*"
+            mPriority=0, mHasPartialTypes=true
+        vnd.android.cursor.item/com.zing.zalo.call:
+          24a34b78 com.zing.zalo/.ui.TempShareViaActivity filter 27543fbd
+            Action: "android.intent.action.VIEW"
+            Category: "android.intent.category.DEFAULT"
+            Type: "vnd.android.cursor.item/com.zing.zalo.call"
+            Type: "vnd.android.cursor.item/com.zing.zalo.message"
+        image/*:
+          24a34b78 com.zing.zalo/.ui.TempShareViaActivity filter 1ccc4b14
+            Action: "android.intent.action.SEND"
+            Action: "android.intent.action.SEND_MULTIPLE"
+            Action: "com.zing.zalo.intent.action.SEND"
+            Category: "android.intent.category.BROWSABLE"
+            Category: "android.intent.category.DEFAULT"
+            Type: "text"
+            Type: "image"
+            Type: "video"
+            Type: "*"
+            mPriority=0, mHasPartialTypes=true
+
+    Base MIME Types:
+        vnd.android.cursor.item:
+          24a34b78 com.zing.zalo/.ui.TempShareViaActivity filter 27543fbd
+            Action: "android.intent.action.VIEW"
+            Category: "android.intent.category.DEFAULT"
+            Type: "vnd.android.cursor.item/com.zing.zalo.call"
+            Type: "vnd.android.cursor.item/com.zing.zalo.message"
+          24a34b78 com.zing.zalo/.ui.TempShareViaActivity filter 27543fbd
+            Action: "android.intent.action.VIEW"
+            Category: "android.intent.category.DEFAULT"
+            Type: "vnd.android.cursor.item/com.zing.zalo.call"
+            Type: "vnd.android.cursor.item/com.zing.zalo.message"
+
+    Wild MIME Types:
+        *:
+          24a34b78 com.zing.zalo/.ui.TempShareViaActivity filter 1ccc4b14
+            Action: "android.intent.action.SEND"
+            Action: "android.intent.action.SEND_MULTIPLE"
+            Action: "com.zing.zalo.intent.action.SEND"
+            Category: "android.intent.category.BROWSABLE"
+            Category: "android.intent.category.DEFAULT"
+            Type: "text"
+            Type: "image"
+            Type: "video"
+            Type: "*"
+            mPriority=0, mHasPartialTypes=true
+        text:
+          24a34b78 com.zing.zalo/.ui.TempShareViaActivity filter 1ccc4b14
+            Action: "android.intent.action.SEND"
+            Action: "android.intent.action.SEND_MULTIPLE"
+            Action: "com.zing.zalo.intent.action.SEND"
+            Category: "android.intent.category.BROWSABLE"
+            Category: "android.intent.category.DEFAULT"
+            Type: "text"
+            Type: "image"
+            Type: "video"
+            Type: "*"
+            mPriority=0, mHasPartialTypes=true
+        image:
+          24a34b78 com.zing.zalo/.ui.TempShareViaActivity filter 1ccc4b14
+            Action: "android.intent.action.SEND"
+            Action: "android.intent.action.SEND_MULTIPLE"
+            Action: "com.zing.zalo.intent.action.SEND"
+            Category: "android.intent.category.BROWSABLE"
+            Category: "android.intent.category.DEFAULT"
+            Type: "text"
+            Type: "image"
+            Type: "video"
+            Type: "*"
+            mPriority=0, mHasPartialTypes=true
+        video:
+          24a34b78 com.zing.zalo/.ui.TempShareViaActivity filter 1ccc4b14
+            Action: "android.intent.action.SEND"
+            Action: "android.intent.action.SEND_MULTIPLE"
+            Action: "com.zing.zalo.intent.action.SEND"
+            Category: "android.intent.category.BROWSABLE"
+            Category: "android.intent.category.DEFAULT"
+            Type: "text"
+            Type: "image"
+            Type: "video"
+            Type: "*"
+            mPriority=0, mHasPartialTypes=true
+
+    Schemes:
+        http:
+          3155e251 com.zing.zalo/.ui.QRCodeParserActivityAlias filter 3378e9b2
+            Action: "android.intent.action.VIEW"
+            Category: "android.intent.category.DEFAULT"
+            Category: "android.intent.category.BROWSABLE"
+            Scheme: "zalo"
+            Scheme: "http"
+            Authority: "zaloapp.com": -1
+            Authority: "zaloapp.com": -1
+            Path: "PatternMatcher{PREFIX: /qr/}"
+            Path: "PatternMatcher{PREFIX: /qr/}"
+          82c3ab6 com.zing.zalo/.ui.IntentHandlerActivityAlias filter 335bed03
+            Action: "android.intent.action.VIEW"
+            Category: "android.intent.category.DEFAULT"
+            Category: "android.intent.category.BROWSABLE"
+            Scheme: "http"
+            Scheme: "https"
+            Authority: "zalo.me": -1
+            Authority: "www.zalo.me": -1
+            Authority: "zalo.me": -1
+            Authority: "www.zalo.me": -1
+            Path: "PatternMatcher{PREFIX: /}"
+            Path: "PatternMatcher{PREFIX: /}"
+            Path: "PatternMatcher{PREFIX: /}"
+            Path: "PatternMatcher{PREFIX: /}"
+        zalo:
+          3155e251 com.zing.zalo/.ui.QRCodeParserActivityAlias filter 3378e9b2
+            Action: "android.intent.action.VIEW"
+            Category: "android.intent.category.DEFAULT"
+            Category: "android.intent.category.BROWSABLE"
+            Scheme: "zalo"
+            Scheme: "http"
+            Authority: "zaloapp.com": -1
+            Authority: "zaloapp.com": -1
+            Path: "PatternMatcher{PREFIX: /qr/}"
+            Path: "PatternMatcher{PREFIX: /qr/}"
+        https:
+          82c3ab6 com.zing.zalo/.ui.IntentHandlerActivityAlias filter 335bed03
+            Action: "android.intent.action.VIEW"
+            Category: "android.intent.category.DEFAULT"
+            Category: "android.intent.category.BROWSABLE"
+            Scheme: "http"
+            Scheme: "https"
+            Authority: "zalo.me": -1
+            Authority: "www.zalo.me": -1
+            Authority: "zalo.me": -1
+            Authority: "www.zalo.me": -1
+            Path: "PatternMatcher{PREFIX: /}"
+            Path: "PatternMatcher{PREFIX: /}"
+            Path: "PatternMatcher{PREFIX: /}"
+            Path: "PatternMatcher{PREFIX: /}"
+
+    Non-Data Actions:
+        com.zing.zalo.intent.action.THIRD_PARTY_APP_AUTHORIZATION:
+          1c7da724 com.zing.zalo/.thirdparty.ui.AuthorizationAppActivityAlias filter 33ad0480
+            Action: "com.zing.zalo.intent.action.THIRD_PARTY_APP_AUTHORIZATION"
+            Category: "android.intent.category.DEFAULT"
+        com.zing.zalo.ui.MessagePopupSMSActivityIntent:
+          26b94c42 com.zing.zalo/.ui.MessagePopupSMSActivity filter 3226565f
+            Action: "com.zing.zalo.ui.MessagePopupSMSActivityIntent"
+        android.intent.action.MAIN:
+          2f2dc453 com.zing.zalo/.ui.SplashActivity filter 3b70a167
+            Action: "android.intent.action.MAIN"
+            Category: "android.intent.category.DEFAULT"
+            Category: "android.intent.category.LAUNCHER"
+        com.zing.zalo.intent.action.NEW_QUICK_PICKER:
+          33801190 com.zing.zalo/.ui.QuickPickerActivity filter 397fe126
+            Action: "com.zing.zalo.intent.action.NEW_QUICK_PICKER"
+            Category: "android.intent.category.DEFAULT"
+        com.zing.zalo.ui.RetryMsgPopupActivity:
+          18418a89 com.zing.zalo/.ui.RetryMsgPopupActivity filter 351de8ac
+            Action: "com.zing.zalo.ui.RetryMsgPopupActivity"
+        com.zing.zalo.intent.action.THIRD_PARTY_REQ_PERM:
+          3b13ea8e com.zing.zalo/.thirdparty.ui.RequestPermissionActivityAlias filter 330a1ab9
+            Action: "com.zing.zalo.intent.action.THIRD_PARTY_REQ_PERM"
+            Category: "android.intent.category.DEFAULT"
+        zm.voip.phone.action.INCALL:
+          30c652af com.zing.zalo/zm.voip.ui.incall.ZmInCallActivity filter 2feffd0a
+            Action: "zm.voip.phone.action.INCALL"
+            Category: "android.intent.category.DEFAULT"
+        com.zing.zalo.ui.MessagePopupActivityIntent:
+          13fcb6bc com.zing.zalo/.ui.MessagePopupActivity filter 3387eefe
+            Action: "com.zing.zalo.ui.MessagePopupActivityIntent"
+
+    MIME Typed Actions:
+        android.intent.action.SEND:
+          24a34b78 com.zing.zalo/.ui.TempShareViaActivity filter 1ccc4b14
+            Action: "android.intent.action.SEND"
+            Action: "android.intent.action.SEND_MULTIPLE"
+            Action: "com.zing.zalo.intent.action.SEND"
+            Category: "android.intent.category.BROWSABLE"
+            Category: "android.intent.category.DEFAULT"
+            Type: "text"
+            Type: "image"
+            Type: "video"
+            Type: "*"
+            mPriority=0, mHasPartialTypes=true
+        android.intent.action.VIEW:
+          24a34b78 com.zing.zalo/.ui.TempShareViaActivity filter 27543fbd
+            Action: "android.intent.action.VIEW"
+            Category: "android.intent.category.DEFAULT"
+            Type: "vnd.android.cursor.item/com.zing.zalo.call"
+            Type: "vnd.android.cursor.item/com.zing.zalo.message"
+        com.zing.zalo.intent.action.SEND:
+          24a34b78 com.zing.zalo/.ui.TempShareViaActivity filter 1ccc4b14
+            Action: "android.intent.action.SEND"
+            Action: "android.intent.action.SEND_MULTIPLE"
+            Action: "com.zing.zalo.intent.action.SEND"
+            Category: "android.intent.category.BROWSABLE"
+            Category: "android.intent.category.DEFAULT"
+            Type: "text"
+            Type: "image"
+            Type: "video"
+            Type: "*"
+            mPriority=0, mHasPartialTypes=true
+        android.intent.action.SEND_MULTIPLE:
+          24a34b78 com.zing.zalo/.ui.TempShareViaActivity filter 1ccc4b14
+            Action: "android.intent.action.SEND"
+            Action: "android.intent.action.SEND_MULTIPLE"
+            Action: "com.zing.zalo.intent.action.SEND"
+            Category: "android.intent.category.BROWSABLE"
+            Category: "android.intent.category.DEFAULT"
+            Type: "text"
+            Type: "image"
+            Type: "video"
+            Type: "*"
+            mPriority=0, mHasPartialTypes=true
+
+  Receiver Resolver Table:
+    Schemes:
+        package:
+          2768219a com.zing.zalo/.receiver.ZaloReceiver filter 11b2895a
+            Action: "android.intent.action.PACKAGE_REMOVED"
+            Action: "android.intent.action.PACKAGE_CHANGED"
+            Action: "android.intent.action.PACKAGE_ADDED"
+            Action: "android.intent.action.PACKAGE_REPLACED"
+            Scheme: "package"
+
+    Non-Data Actions:
+        android.intent.action.ACTION_POWER_DISCONNECTED:
+          2768219a com.zing.zalo/.receiver.ZaloReceiver filter 71687c
+            Action: "android.intent.action.BOOT_COMPLETED"
+            Action: "android.intent.action.USER_PRESENT"
+            Action: "android.intent.action.GTALK_CONNECTED"
+            Action: "android.intent.action.ACTION_POWER_CONNECTED"
+            Action: "android.intent.action.ACTION_POWER_DISCONNECTED"
+            Action: "android.net.conn.CONNECTIVITY_CHANGE"
+            Action: "android.net.conn.CONNECTIVITY_CHANGE_IMMEDIATE"
+            Action: "android.net.wifi.STATE_CHANGE"
+            Action: "android.net.wifi.SCAN_RESULTS"
+          Action: "android.net.wifi.RSSI_CHANGED"
+            Action: "com.zing.zalo.intent.action.ACTION_RETRY_DOWNLOAD_APK"
+            Action: "com.zing.zalo.intent.action.ACTION_FINISH_DOWNLOAD_APK"
+            Action: "com.zing.zalo.intent.action.START_ZALO_BACKGROUND_SERVICE"
+            Action: "com.zing.zalo.browser.action.DOWNLOAD_CANCEL"
+            Action: "com.zing.zalo.intent.action.DELETE_NOTIFICATION"
+            Action: "com.zing.zalo.intent.action.ACTION_CANCEL_ACTIVEBYREJECTCALL"
+            Action: "com.zing.zalo.intent.action.FINISH_COCOS_EFFECT"
+            Action: "com.zing.zalo.intent.action.ACTION_COCOS_INPUT_TEXT_CHANGED"
+            Action: "com.zing.zalo.intent.action.ACTION_COCOS_PROCESS_ACTION_LIST"
+            Action: "com.zing.zalo.intent.action.ACTION_FORCE_CLOSE_COCOS"
+            Action: "com.zing.zalo.intent.action.ACTION_DEMAND_WEARABLE"
+            Action: "com.zing.zalo.intent.action.ACTION_RETRY_DOWNLOAD_FILE"
+            mPriority=999, mHasPartialTypes=false
+        com.zing.zalo.browser.action.DOWNLOAD_CANCEL:
+          2768219a com.zing.zalo/.receiver.ZaloReceiver filter 71687c
+            Action: "android.intent.action.BOOT_COMPLETED"
+            Action: "android.intent.action.USER_PRESENT"
+            Action: "android.intent.action.GTALK_CONNECTED"
+            Action: "android.intent.action.ACTION_POWER_CONNECTED"
+            Action: "android.intent.action.ACTION_POWER_DISCONNECTED"
+            Action: "android.net.conn.CONNECTIVITY_CHANGE"
+            Action: "android.net.conn.CONNECTIVITY_CHANGE_IMMEDIATE"
+            Action: "android.net.wifi.STATE_CHANGE"
+            Action: "android.net.wifi.SCAN_RESULTS"
+            Action: "android.net.wifi.RSSI_CHANGED"
+            Action: "com.zing.zalo.intent.action.ACTION_RETRY_DOWNLOAD_APK"
+            Action: "com.zing.zalo.intent.action.ACTION_FINISH_DOWNLOAD_APK"
+            Action: "com.zing.zalo.intent.action.START_ZALO_BACKGROUND_SERVICE"
+            Action: "com.zing.zalo.browser.action.DOWNLOAD_CANCEL"
+            Action: "com.zing.zalo.intent.action.DELETE_NOTIFICATION"
+            Action: "com.zing.zalo.intent.action.ACTION_CANCEL_ACTIVEBYREJECTCALL"
+            Action: "com.zing.zalo.intent.action.FINISH_COCOS_EFFECT"
+            Action: "com.zing.zalo.intent.action.ACTION_COCOS_INPUT_TEXT_CHANGED"
+            Action: "com.zing.zalo.intent.action.ACTION_COCOS_PROCESS_ACTION_LIST"
+            Action: "com.zing.zalo.intent.action.ACTION_FORCE_CLOSE_COCOS"
+            Action: "com.zing.zalo.intent.action.ACTION_DEMAND_WEARABLE"
+            Action: "com.zing.zalo.intent.action.ACTION_RETRY_DOWNLOAD_FILE"
+            mPriority=999, mHasPartialTypes=false
+        com.zing.zalo.intent.action.ACTION_COCOS_INPUT_TEXT_CHANGED:
+          2768219a com.zing.zalo/.receiver.ZaloReceiver filter 71687c
+            Action: "android.intent.action.BOOT_COMPLETED"
+            Action: "android.intent.action.USER_PRESENT"
+            Action: "android.intent.action.GTALK_CONNECTED"
+            Action: "android.intent.action.ACTION_POWER_CONNECTED"
+            Action: "android.intent.action.ACTION_POWER_DISCONNECTED"
+            Action: "android.net.conn.CONNECTIVITY_CHANGE"
+            Action: "android.net.conn.CONNECTIVITY_CHANGE_IMMEDIATE"
+            Action: "android.net.wifi.STATE_CHANGE"
+            Action: "android.net.wifi.SCAN_RESULTS"
+            Action: "android.net.wifi.RSSI_CHANGED"
+            Action: "com.zing.zalo.intent.action.ACTION_RETRY_DOWNLOAD_APK"
+            Action: "com.zing.zalo.intent.action.ACTION_FINISH_DOWNLOAD_APK"
+            Action: "com.zing.zalo.intent.action.START_ZALO_BACKGROUND_SERVICE"
+            Action: "com.zing.zalo.browser.action.DOWNLOAD_CANCEL"
+            Action: "com.zing.zalo.intent.action.DELETE_NOTIFICATION"
+            Action: "com.zing.zalo.intent.action.ACTION_CANCEL_ACTIVEBYREJECTCALL"
+            Action: "com.zing.zalo.intent.action.FINISH_COCOS_EFFECT"
+            Action: "com.zing.zalo.intent.action.ACTION_COCOS_INPUT_TEXT_CHANGED"
+            Action: "com.zing.zalo.intent.action.ACTION_COCOS_PROCESS_ACTION_LIST"
+            Action: "com.zing.zalo.intent.action.ACTION_FORCE_CLOSE_COCOS"
+            Action: "com.zing.zalo.intent.action.ACTION_DEMAND_WEARABLE"
+            Action: "com.zing.zalo.intent.action.ACTION_RETRY_DOWNLOAD_FILE"
+            mPriority=999, mHasPartialTypes=false
+        com.zing.zalo.intent.action.FINISH_COCOS_EFFECT:
+          2768219a com.zing.zalo/.receiver.ZaloReceiver filter 71687c
+            Action: "android.intent.action.BOOT_COMPLETED"
+            Action: "android.intent.action.USER_PRESENT"
+            Action: "android.intent.action.GTALK_CONNECTED"
+            Action: "android.intent.action.ACTION_POWER_CONNECTED"
+            Action: "android.intent.action.ACTION_POWER_DISCONNECTED"
+            Action: "android.net.conn.CONNECTIVITY_CHANGE"
+            Action: "android.net.conn.CONNECTIVITY_CHANGE_IMMEDIATE"
+            Action: "android.net.wifi.STATE_CHANGE"
+            Action: "android.net.wifi.SCAN_RESULTS"
+            Action: "android.net.wifi.RSSI_CHANGED"
+            Action: "com.zing.zalo.intent.action.ACTION_RETRY_DOWNLOAD_APK"
+            Action: "com.zing.zalo.intent.action.ACTION_FINISH_DOWNLOAD_APK"
+            Action: "com.zing.zalo.intent.action.START_ZALO_BACKGROUND_SERVICE"
+            Action: "com.zing.zalo.browser.action.DOWNLOAD_CANCEL"
+            Action: "com.zing.zalo.intent.action.DELETE_NOTIFICATION"
+            Action: "com.zing.zalo.intent.action.ACTION_CANCEL_ACTIVEBYREJECTCALL"
+            Action: "com.zing.zalo.intent.action.FINISH_COCOS_EFFECT"
+            Action: "com.zing.zalo.intent.action.ACTION_COCOS_INPUT_TEXT_CHANGED"
+            Action: "com.zing.zalo.intent.action.ACTION_COCOS_PROCESS_ACTION_LIST"
+            Action: "com.zing.zalo.intent.action.ACTION_FORCE_CLOSE_COCOS"
+            Action: "com.zing.zalo.intent.action.ACTION_DEMAND_WEARABLE"
+            Action: "com.zing.zalo.intent.action.ACTION_RETRY_DOWNLOAD_FILE"
+            mPriority=999, mHasPartialTypes=false
+        android.intent.action.PHONE_STATE:
+          2768219a com.zing.zalo/.receiver.ZaloReceiver filter a077505
+            Action: "android.provider.Telephony.SMS_RECEIVED"
+            Action: "android.provider.telephony.SMS_RECEIVED"
+            Action: "android.intent.action.PHONE_STATE"
+            Category: "android.intent.category.DEFAULT"
+            mPriority=2147483647, mHasPartialTypes=false
+        android.net.conn.CONNECTIVITY_CHANGE:
+          2768219a com.zing.zalo/.receiver.ZaloReceiver filter 71687c
+            Action: "android.intent.action.BOOT_COMPLETED"
+            Action: "android.intent.action.USER_PRESENT"
+            Action: "android.intent.action.GTALK_CONNECTED"
+            Action: "android.intent.action.ACTION_POWER_CONNECTED"
+            Action: "android.intent.action.ACTION_POWER_DISCONNECTED"
+            Action: "android.net.conn.CONNECTIVITY_CHANGE"
+            Action: "android.net.conn.CONNECTIVITY_CHANGE_IMMEDIATE"
+            Action: "android.net.wifi.STATE_CHANGE"
+            Action: "android.net.wifi.SCAN_RESULTS"
+            Action: "android.net.wifi.RSSI_CHANGED"
+            Action: "com.zing.zalo.intent.action.ACTION_RETRY_DOWNLOAD_APK"
+            Action: "com.zing.zalo.intent.action.ACTION_FINISH_DOWNLOAD_APK"
+            Action: "com.zing.zalo.intent.action.START_ZALO_BACKGROUND_SERVICE"
+            Action: "com.zing.zalo.browser.action.DOWNLOAD_CANCEL"
+            Action: "com.zing.zalo.intent.action.DELETE_NOTIFICATION"
+            Action: "com.zing.zalo.intent.action.ACTION_CANCEL_ACTIVEBYREJECTCALL"
+            Action: "com.zing.zalo.intent.action.FINISH_COCOS_EFFECT"
+            Action: "com.zing.zalo.intent.action.ACTION_COCOS_INPUT_TEXT_CHANGED"
+            Action: "com.zing.zalo.intent.action.ACTION_COCOS_PROCESS_ACTION_LIST"
+            Action: "com.zing.zalo.intent.action.ACTION_FORCE_CLOSE_COCOS"
+            Action: "com.zing.zalo.intent.action.ACTION_DEMAND_WEARABLE"
+            Action: "com.zing.zalo.intent.action.ACTION_RETRY_DOWNLOAD_FILE"
+            mPriority=999, mHasPartialTypes=false
+        com.zing.zalo.intent.action.ACTION_RETRY_DOWNLOAD_APK:
+          2768219a com.zing.zalo/.receiver.ZaloReceiver filter 71687c
+            Action: "android.intent.action.BOOT_COMPLETED"
+            Action: "android.intent.action.USER_PRESENT"
+            Action: "android.intent.action.GTALK_CONNECTED"
+            Action: "android.intent.action.ACTION_POWER_CONNECTED"
+            Action: "android.intent.action.ACTION_POWER_DISCONNECTED"
+            Action: "android.net.conn.CONNECTIVITY_CHANGE"
+            Action: "android.net.conn.CONNECTIVITY_CHANGE_IMMEDIATE"
+            Action: "android.net.wifi.STATE_CHANGE"
+            Action: "android.net.wifi.SCAN_RESULTS"
+            Action: "android.net.wifi.RSSI_CHANGED"
+            Action: "com.zing.zalo.intent.action.ACTION_RETRY_DOWNLOAD_APK"
+            Action: "com.zing.zalo.intent.action.ACTION_FINISH_DOWNLOAD_APK"
+            Action: "com.zing.zalo.intent.action.START_ZALO_BACKGROUND_SERVICE"
+            Action: "com.zing.zalo.browser.action.DOWNLOAD_CANCEL"
+            Action: "com.zing.zalo.intent.action.DELETE_NOTIFICATION"
+            Action: "com.zing.zalo.intent.action.ACTION_CANCEL_ACTIVEBYREJECTCALL"
+            Action: "com.zing.zalo.intent.action.FINISH_COCOS_EFFECT"
+            Action: "com.zing.zalo.intent.action.ACTION_COCOS_INPUT_TEXT_CHANGED"
+            Action: "com.zing.zalo.intent.action.ACTION_COCOS_PROCESS_ACTION_LIST"
+            Action: "com.zing.zalo.intent.action.ACTION_FORCE_CLOSE_COCOS"
+            Action: "com.zing.zalo.intent.action.ACTION_DEMAND_WEARABLE"
+            Action: "com.zing.zalo.intent.action.ACTION_RETRY_DOWNLOAD_FILE"
+            mPriority=999, mHasPartialTypes=false
+        com.zing.zalo.intent.action.ACTION_FINISH_DOWNLOAD_APK:
+          2768219a com.zing.zalo/.receiver.ZaloReceiver filter 71687c
+            Action: "android.intent.action.BOOT_COMPLETED"
+            Action: "android.intent.action.USER_PRESENT"
+            Action: "android.intent.action.GTALK_CONNECTED"
+            Action: "android.intent.action.ACTION_POWER_CONNECTED"
+            Action: "android.intent.action.ACTION_POWER_DISCONNECTED"
+            Action: "android.net.conn.CONNECTIVITY_CHANGE"
+            Action: "android.net.conn.CONNECTIVITY_CHANGE_IMMEDIATE"
+            Action: "android.net.wifi.STATE_CHANGE"
+            Action: "android.net.wifi.SCAN_RESULTS"
+            Action: "android.net.wifi.RSSI_CHANGED"
+            Action: "com.zing.zalo.intent.action.ACTION_RETRY_DOWNLOAD_APK"
+            Action: "com.zing.zalo.intent.action.ACTION_FINISH_DOWNLOAD_APK"
+            Action: "com.zing.zalo.intent.action.START_ZALO_BACKGROUND_SERVICE"
+            Action: "com.zing.zalo.browser.action.DOWNLOAD_CANCEL"
+            Action: "com.zing.zalo.intent.action.DELETE_NOTIFICATION"
+            Action: "com.zing.zalo.intent.action.ACTION_CANCEL_ACTIVEBYREJECTCALL"
+            Action: "com.zing.zalo.intent.action.FINISH_COCOS_EFFECT"
+            Action: "com.zing.zalo.intent.action.ACTION_COCOS_INPUT_TEXT_CHANGED"
+            Action: "com.zing.zalo.intent.action.ACTION_COCOS_PROCESS_ACTION_LIST"
+            Action: "com.zing.zalo.intent.action.ACTION_FORCE_CLOSE_COCOS"
+            Action: "com.zing.zalo.intent.action.ACTION_DEMAND_WEARABLE"
+            Action: "com.zing.zalo.intent.action.ACTION_RETRY_DOWNLOAD_FILE"
+            mPriority=999, mHasPartialTypes=false
+        com.zing.zalo.action.ACTION_UPDATE_VIDEO_PROCESSING:
+          18af6acb com.zing.zalo/.receiver.VideoCompressReceiver filter 180f5c81
+            Action: "com.zing.zalo.action.ACTION_UPDATE_VIDEO_PROCESSING"
+            Category: "com.zing.zalo"
+        com.zing.zalo.intent.action.DELETE_NOTIFICATION:
+          2768219a com.zing.zalo/.receiver.ZaloReceiver filter 71687c
+            Action: "android.intent.action.BOOT_COMPLETED"
+            Action: "android.intent.action.USER_PRESENT"
+            Action: "android.intent.action.GTALK_CONNECTED"
+            Action: "android.intent.action.ACTION_POWER_CONNECTED"
+            Action: "android.intent.action.ACTION_POWER_DISCONNECTED"
+            Action: "android.net.conn.CONNECTIVITY_CHANGE"
+            Action: "android.net.conn.CONNECTIVITY_CHANGE_IMMEDIATE"
+            Action: "android.net.wifi.STATE_CHANGE"
+            Action: "android.net.wifi.SCAN_RESULTS"
+            Action: "android.net.wifi.RSSI_CHANGED"
+            Action: "com.zing.zalo.intent.action.ACTION_RETRY_DOWNLOAD_APK"
+            Action: "com.zing.zalo.intent.action.ACTION_FINISH_DOWNLOAD_APK"
+            Action: "com.zing.zalo.intent.action.START_ZALO_BACKGROUND_SERVICE"
+            Action: "com.zing.zalo.browser.action.DOWNLOAD_CANCEL"
+            Action: "com.zing.zalo.intent.action.DELETE_NOTIFICATION"
+            Action: "com.zing.zalo.intent.action.ACTION_CANCEL_ACTIVEBYREJECTCALL"
+            Action: "com.zing.zalo.intent.action.FINISH_COCOS_EFFECT"
+            Action: "com.zing.zalo.intent.action.ACTION_COCOS_INPUT_TEXT_CHANGED"
+            Action: "com.zing.zalo.intent.action.ACTION_COCOS_PROCESS_ACTION_LIST"
+            Action: "com.zing.zalo.intent.action.ACTION_FORCE_CLOSE_COCOS"
+            Action: "com.zing.zalo.intent.action.ACTION_DEMAND_WEARABLE"
+            Action: "com.zing.zalo.intent.action.ACTION_RETRY_DOWNLOAD_FILE"
+            mPriority=999, mHasPartialTypes=false
+        android.net.wifi.RSSI_CHANGED:
+          2768219a com.zing.zalo/.receiver.ZaloReceiver filter 71687c
+            Action: "android.intent.action.BOOT_COMPLETED"
+            Action: "android.intent.action.USER_PRESENT"
+            Action: "android.intent.action.GTALK_CONNECTED"
+            Action: "android.intent.action.ACTION_POWER_CONNECTED"
+            Action: "android.intent.action.ACTION_POWER_DISCONNECTED"
+            Action: "android.net.conn.CONNECTIVITY_CHANGE"
+            Action: "android.net.conn.CONNECTIVITY_CHANGE_IMMEDIATE"
+            Action: "android.net.wifi.STATE_CHANGE"
+            Action: "android.net.wifi.SCAN_RESULTS"
+            Action: "android.net.wifi.RSSI_CHANGED"
+            Action: "com.zing.zalo.intent.action.ACTION_RETRY_DOWNLOAD_APK"
+            Action: "com.zing.zalo.intent.action.ACTION_FINISH_DOWNLOAD_APK"
+            Action: "com.zing.zalo.intent.action.START_ZALO_BACKGROUND_SERVICE"
+            Action: "com.zing.zalo.browser.action.DOWNLOAD_CANCEL"
+            Action: "com.zing.zalo.intent.action.DELETE_NOTIFICATION"
+            Action: "com.zing.zalo.intent.action.ACTION_CANCEL_ACTIVEBYREJECTCALL"
+            Action: "com.zing.zalo.intent.action.FINISH_COCOS_EFFECT"
+            Action: "com.zing.zalo.intent.action.ACTION_COCOS_INPUT_TEXT_CHANGED"
+            Action: "com.zing.zalo.intent.action.ACTION_COCOS_PROCESS_ACTION_LIST"
+            Action: "com.zing.zalo.intent.action.ACTION_FORCE_CLOSE_COCOS"
+            Action: "com.zing.zalo.intent.action.ACTION_DEMAND_WEARABLE"
+            Action: "com.zing.zalo.intent.action.ACTION_RETRY_DOWNLOAD_FILE"
+            mPriority=999, mHasPartialTypes=false
+        android.net.wifi.STATE_CHANGE:
+          2768219a com.zing.zalo/.receiver.ZaloReceiver filter 71687c
+            Action: "android.intent.action.BOOT_COMPLETED"
+            Action: "android.intent.action.USER_PRESENT"
+            Action: "android.intent.action.GTALK_CONNECTED"
+            Action: "android.intent.action.ACTION_POWER_CONNECTED"
+            Action: "android.intent.action.ACTION_POWER_DISCONNECTED"
+            Action: "android.net.conn.CONNECTIVITY_CHANGE"
+            Action: "android.net.conn.CONNECTIVITY_CHANGE_IMMEDIATE"
+            Action: "android.net.wifi.STATE_CHANGE"
+            Action: "android.net.wifi.SCAN_RESULTS"
+            Action: "android.net.wifi.RSSI_CHANGED"
+            Action: "com.zing.zalo.intent.action.ACTION_RETRY_DOWNLOAD_APK"
+            Action: "com.zing.zalo.intent.action.ACTION_FINISH_DOWNLOAD_APK"
+            Action: "com.zing.zalo.intent.action.START_ZALO_BACKGROUND_SERVICE"
+            Action: "com.zing.zalo.browser.action.DOWNLOAD_CANCEL"
+            Action: "com.zing.zalo.intent.action.DELETE_NOTIFICATION"
+            Action: "com.zing.zalo.intent.action.ACTION_CANCEL_ACTIVEBYREJECTCALL"
+            Action: "com.zing.zalo.intent.action.FINISH_COCOS_EFFECT"
+            Action: "com.zing.zalo.intent.action.ACTION_COCOS_INPUT_TEXT_CHANGED"
+            Action: "com.zing.zalo.intent.action.ACTION_COCOS_PROCESS_ACTION_LIST"
+            Action: "com.zing.zalo.intent.action.ACTION_FORCE_CLOSE_COCOS"
+            Action: "com.zing.zalo.intent.action.ACTION_DEMAND_WEARABLE"
+            Action: "com.zing.zalo.intent.action.ACTION_RETRY_DOWNLOAD_FILE"
+            mPriority=999, mHasPartialTypes=false
+        com.zing.zalo.intent.action.ACTION_FORCE_CLOSE_COCOS:
+          2768219a com.zing.zalo/.receiver.ZaloReceiver filter 71687c
+            Action: "android.intent.action.BOOT_COMPLETED"
+            Action: "android.intent.action.USER_PRESENT"
+            Action: "android.intent.action.GTALK_CONNECTED"
+            Action: "android.intent.action.ACTION_POWER_CONNECTED"
+            Action: "android.intent.action.ACTION_POWER_DISCONNECTED"
+            Action: "android.net.conn.CONNECTIVITY_CHANGE"
+            Action: "android.net.conn.CONNECTIVITY_CHANGE_IMMEDIATE"
+            Action: "android.net.wifi.STATE_CHANGE"
+            Action: "android.net.wifi.SCAN_RESULTS"
+            Action: "android.net.wifi.RSSI_CHANGED"
+            Action: "com.zing.zalo.intent.action.ACTION_RETRY_DOWNLOAD_APK"
+            Action: "com.zing.zalo.intent.action.ACTION_FINISH_DOWNLOAD_APK"
+            Action: "com.zing.zalo.intent.action.START_ZALO_BACKGROUND_SERVICE"
+            Action: "com.zing.zalo.browser.action.DOWNLOAD_CANCEL"
+            Action: "com.zing.zalo.intent.action.DELETE_NOTIFICATION"
+            Action: "com.zing.zalo.intent.action.ACTION_CANCEL_ACTIVEBYREJECTCALL"
+            Action: "com.zing.zalo.intent.action.FINISH_COCOS_EFFECT"
+            Action: "com.zing.zalo.intent.action.ACTION_COCOS_INPUT_TEXT_CHANGED"
+            Action: "com.zing.zalo.intent.action.ACTION_COCOS_PROCESS_ACTION_LIST"
+            Action: "com.zing.zalo.intent.action.ACTION_FORCE_CLOSE_COCOS"
+            Action: "com.zing.zalo.intent.action.ACTION_DEMAND_WEARABLE"
+            Action: "com.zing.zalo.intent.action.ACTION_RETRY_DOWNLOAD_FILE"
+            mPriority=999, mHasPartialTypes=false
+        com.zing.zalo.intent.action.ACTION_RETRY_DOWNLOAD_FILE:
+          2768219a com.zing.zalo/.receiver.ZaloReceiver filter 71687c
+            Action: "android.intent.action.BOOT_COMPLETED"
+            Action: "android.intent.action.USER_PRESENT"
+            Action: "android.intent.action.GTALK_CONNECTED"
+            Action: "android.intent.action.ACTION_POWER_CONNECTED"
+            Action: "android.intent.action.ACTION_POWER_DISCONNECTED"
+            Action: "android.net.conn.CONNECTIVITY_CHANGE"
+            Action: "android.net.conn.CONNECTIVITY_CHANGE_IMMEDIATE"
+            Action: "android.net.wifi.STATE_CHANGE"
+            Action: "android.net.wifi.SCAN_RESULTS"
+            Action: "android.net.wifi.RSSI_CHANGED"
+            Action: "com.zing.zalo.intent.action.ACTION_RETRY_DOWNLOAD_APK"
+            Action: "com.zing.zalo.intent.action.ACTION_FINISH_DOWNLOAD_APK"
+            Action: "com.zing.zalo.intent.action.START_ZALO_BACKGROUND_SERVICE"
+            Action: "com.zing.zalo.browser.action.DOWNLOAD_CANCEL"
+            Action: "com.zing.zalo.intent.action.DELETE_NOTIFICATION"
+            Action: "com.zing.zalo.intent.action.ACTION_CANCEL_ACTIVEBYREJECTCALL"
+            Action: "com.zing.zalo.intent.action.FINISH_COCOS_EFFECT"
+            Action: "com.zing.zalo.intent.action.ACTION_COCOS_INPUT_TEXT_CHANGED"
+            Action: "com.zing.zalo.intent.action.ACTION_COCOS_PROCESS_ACTION_LIST"
+            Action: "com.zing.zalo.intent.action.ACTION_FORCE_CLOSE_COCOS"
+            Action: "com.zing.zalo.intent.action.ACTION_DEMAND_WEARABLE"
+            Action: "com.zing.zalo.intent.action.ACTION_RETRY_DOWNLOAD_FILE"
+            mPriority=999, mHasPartialTypes=false
+        com.zing.zalo.intent.action.ACTION_COCOS_PROCESS_ACTION_LIST:
+          2768219a com.zing.zalo/.receiver.ZaloReceiver filter 71687c
+            Action: "android.intent.action.BOOT_COMPLETED"
+            Action: "android.intent.action.USER_PRESENT"
+            Action: "android.intent.action.GTALK_CONNECTED"
+            Action: "android.intent.action.ACTION_POWER_CONNECTED"
+            Action: "android.intent.action.ACTION_POWER_DISCONNECTED"
+            Action: "android.net.conn.CONNECTIVITY_CHANGE"
+            Action: "android.net.conn.CONNECTIVITY_CHANGE_IMMEDIATE"
+            Action: "android.net.wifi.STATE_CHANGE"
+            Action: "android.net.wifi.SCAN_RESULTS"
+            Action: "android.net.wifi.RSSI_CHANGED"
+            Action: "com.zing.zalo.intent.action.ACTION_RETRY_DOWNLOAD_APK"
+            Action: "com.zing.zalo.intent.action.ACTION_FINISH_DOWNLOAD_APK"
+            Action: "com.zing.zalo.intent.action.START_ZALO_BACKGROUND_SERVICE"
+            Action: "com.zing.zalo.browser.action.DOWNLOAD_CANCEL"
+            Action: "com.zing.zalo.intent.action.DELETE_NOTIFICATION"
+            Action: "com.zing.zalo.intent.action.ACTION_CANCEL_ACTIVEBYREJECTCALL"
+            Action: "com.zing.zalo.intent.action.FINISH_COCOS_EFFECT"
+            Action: "com.zing.zalo.intent.action.ACTION_COCOS_INPUT_TEXT_CHANGED"
+            Action: "com.zing.zalo.intent.action.ACTION_COCOS_PROCESS_ACTION_LIST"
+            Action: "com.zing.zalo.intent.action.ACTION_FORCE_CLOSE_COCOS"
+            Action: "com.zing.zalo.intent.action.ACTION_DEMAND_WEARABLE"
+            Action: "com.zing.zalo.intent.action.ACTION_RETRY_DOWNLOAD_FILE"
+            mPriority=999, mHasPartialTypes=false
+        com.google.android.c2dm.intent.RECEIVE:
+          193c82a8 com.zing.zalo/com.google.android.gcm.GCMBroadcastReceiver filter 47a178b
+            Action: "com.google.android.c2dm.intent.RECEIVE"
+            Action: "com.google.android.c2dm.intent.REGISTRATION"
+            Category: "com.zing.zalo"
+        android.provider.telephony.SMS_RECEIVED:
+          2768219a com.zing.zalo/.receiver.ZaloReceiver filter a077505
+            Action: "android.provider.Telephony.SMS_RECEIVED"
+            Action: "android.provider.telephony.SMS_RECEIVED"
+            Action: "android.intent.action.PHONE_STATE"
+            Category: "android.intent.category.DEFAULT"
+            mPriority=2147483647, mHasPartialTypes=false
+        android.net.conn.CONNECTIVITY_CHANGE_IMMEDIATE:
+          2768219a com.zing.zalo/.receiver.ZaloReceiver filter 71687c
+            Action: "android.intent.action.BOOT_COMPLETED"
+            Action: "android.intent.action.USER_PRESENT"
+            Action: "android.intent.action.GTALK_CONNECTED"
+            Action: "android.intent.action.ACTION_POWER_CONNECTED"
+            Action: "android.intent.action.ACTION_POWER_DISCONNECTED"
+            Action: "android.net.conn.CONNECTIVITY_CHANGE"
+            Action: "android.net.conn.CONNECTIVITY_CHANGE_IMMEDIATE"
+            Action: "android.net.wifi.STATE_CHANGE"
+            Action: "android.net.wifi.SCAN_RESULTS"
+            Action: "android.net.wifi.RSSI_CHANGED"
+            Action: "com.zing.zalo.intent.action.ACTION_RETRY_DOWNLOAD_APK"
+            Action: "com.zing.zalo.intent.action.ACTION_FINISH_DOWNLOAD_APK"
+            Action: "com.zing.zalo.intent.action.START_ZALO_BACKGROUND_SERVICE"
+            Action: "com.zing.zalo.browser.action.DOWNLOAD_CANCEL"
+            Action: "com.zing.zalo.intent.action.DELETE_NOTIFICATION"
+            Action: "com.zing.zalo.intent.action.ACTION_CANCEL_ACTIVEBYREJECTCALL"
+            Action: "com.zing.zalo.intent.action.FINISH_COCOS_EFFECT"
+            Action: "com.zing.zalo.intent.action.ACTION_COCOS_INPUT_TEXT_CHANGED"
+            Action: "com.zing.zalo.intent.action.ACTION_COCOS_PROCESS_ACTION_LIST"
+            Action: "com.zing.zalo.intent.action.ACTION_FORCE_CLOSE_COCOS"
+            Action: "com.zing.zalo.intent.action.ACTION_DEMAND_WEARABLE"
+            Action: "com.zing.zalo.intent.action.ACTION_RETRY_DOWNLOAD_FILE"
+          mPriority=999, mHasPartialTypes=false
+        com.zing.zalo.intent.action.START_ZALO_BACKGROUND_SERVICE:
+          2768219a com.zing.zalo/.receiver.ZaloReceiver filter 71687c
+            Action: "android.intent.action.BOOT_COMPLETED"
+            Action: "android.intent.action.USER_PRESENT"
+            Action: "android.intent.action.GTALK_CONNECTED"
+            Action: "android.intent.action.ACTION_POWER_CONNECTED"
+            Action: "android.intent.action.ACTION_POWER_DISCONNECTED"
+            Action: "android.net.conn.CONNECTIVITY_CHANGE"
+            Action: "android.net.conn.CONNECTIVITY_CHANGE_IMMEDIATE"
+            Action: "android.net.wifi.STATE_CHANGE"
+            Action: "android.net.wifi.SCAN_RESULTS"
+            Action: "android.net.wifi.RSSI_CHANGED"
+            Action: "com.zing.zalo.intent.action.ACTION_RETRY_DOWNLOAD_APK"
+            Action: "com.zing.zalo.intent.action.ACTION_FINISH_DOWNLOAD_APK"
+            Action: "com.zing.zalo.intent.action.START_ZALO_BACKGROUND_SERVICE"
+            Action: "com.zing.zalo.browser.action.DOWNLOAD_CANCEL"
+            Action: "com.zing.zalo.intent.action.DELETE_NOTIFICATION"
+            Action: "com.zing.zalo.intent.action.ACTION_CANCEL_ACTIVEBYREJECTCALL"
+            Action: "com.zing.zalo.intent.action.FINISH_COCOS_EFFECT"
+            Action: "com.zing.zalo.intent.action.ACTION_COCOS_INPUT_TEXT_CHANGED"
+            Action: "com.zing.zalo.intent.action.ACTION_COCOS_PROCESS_ACTION_LIST"
+            Action: "com.zing.zalo.intent.action.ACTION_FORCE_CLOSE_COCOS"
+            Action: "com.zing.zalo.intent.action.ACTION_DEMAND_WEARABLE"
+            Action: "com.zing.zalo.intent.action.ACTION_RETRY_DOWNLOAD_FILE"
+            mPriority=999, mHasPartialTypes=false
+        android.intent.action.BOOT_COMPLETED:
+          2768219a com.zing.zalo/.receiver.ZaloReceiver filter 71687c
+            Action: "android.intent.action.BOOT_COMPLETED"
+            Action: "android.intent.action.USER_PRESENT"
+            Action: "android.intent.action.GTALK_CONNECTED"
+            Action: "android.intent.action.ACTION_POWER_CONNECTED"
+            Action: "android.intent.action.ACTION_POWER_DISCONNECTED"
+            Action: "android.net.conn.CONNECTIVITY_CHANGE"
+            Action: "android.net.conn.CONNECTIVITY_CHANGE_IMMEDIATE"
+            Action: "android.net.wifi.STATE_CHANGE"
+            Action: "android.net.wifi.SCAN_RESULTS"
+            Action: "android.net.wifi.RSSI_CHANGED"
+            Action: "com.zing.zalo.intent.action.ACTION_RETRY_DOWNLOAD_APK"
+            Action: "com.zing.zalo.intent.action.ACTION_FINISH_DOWNLOAD_APK"
+            Action: "com.zing.zalo.intent.action.START_ZALO_BACKGROUND_SERVICE"
+            Action: "com.zing.zalo.browser.action.DOWNLOAD_CANCEL"
+            Action: "com.zing.zalo.intent.action.DELETE_NOTIFICATION"
+            Action: "com.zing.zalo.intent.action.ACTION_CANCEL_ACTIVEBYREJECTCALL"
+            Action: "com.zing.zalo.intent.action.FINISH_COCOS_EFFECT"
+            Action: "com.zing.zalo.intent.action.ACTION_COCOS_INPUT_TEXT_CHANGED"
+            Action: "com.zing.zalo.intent.action.ACTION_COCOS_PROCESS_ACTION_LIST"
+            Action: "com.zing.zalo.intent.action.ACTION_FORCE_CLOSE_COCOS"
+            Action: "com.zing.zalo.intent.action.ACTION_DEMAND_WEARABLE"
+            Action: "com.zing.zalo.intent.action.ACTION_RETRY_DOWNLOAD_FILE"
+            mPriority=999, mHasPartialTypes=false
+        android.intent.action.USER_PRESENT:
+          2768219a com.zing.zalo/.receiver.ZaloReceiver filter 71687c
+            Action: "android.intent.action.BOOT_COMPLETED"
+            Action: "android.intent.action.USER_PRESENT"
+            Action: "android.intent.action.GTALK_CONNECTED"
+            Action: "android.intent.action.ACTION_POWER_CONNECTED"
+            Action: "android.intent.action.ACTION_POWER_DISCONNECTED"
+            Action: "android.net.conn.CONNECTIVITY_CHANGE"
+            Action: "android.net.conn.CONNECTIVITY_CHANGE_IMMEDIATE"
+            Action: "android.net.wifi.STATE_CHANGE"
+            Action: "android.net.wifi.SCAN_RESULTS"
+            Action: "android.net.wifi.RSSI_CHANGED"
+            Action: "com.zing.zalo.intent.action.ACTION_RETRY_DOWNLOAD_APK"
+            Action: "com.zing.zalo.intent.action.ACTION_FINISH_DOWNLOAD_APK"
+            Action: "com.zing.zalo.intent.action.START_ZALO_BACKGROUND_SERVICE"
+            Action: "com.zing.zalo.browser.action.DOWNLOAD_CANCEL"
+            Action: "com.zing.zalo.intent.action.DELETE_NOTIFICATION"
+            Action: "com.zing.zalo.intent.action.ACTION_CANCEL_ACTIVEBYREJECTCALL"
+            Action: "com.zing.zalo.intent.action.FINISH_COCOS_EFFECT"
+            Action: "com.zing.zalo.intent.action.ACTION_COCOS_INPUT_TEXT_CHANGED"
+            Action: "com.zing.zalo.intent.action.ACTION_COCOS_PROCESS_ACTION_LIST"
+            Action: "com.zing.zalo.intent.action.ACTION_FORCE_CLOSE_COCOS"
+            Action: "com.zing.zalo.intent.action.ACTION_DEMAND_WEARABLE"
+            Action: "com.zing.zalo.intent.action.ACTION_RETRY_DOWNLOAD_FILE"
+            mPriority=999, mHasPartialTypes=false
+        android.intent.action.GTALK_CONNECTED:
+          2768219a com.zing.zalo/.receiver.ZaloReceiver filter 71687c
+            Action: "android.intent.action.BOOT_COMPLETED"
+            Action: "android.intent.action.USER_PRESENT"
+            Action: "android.intent.action.GTALK_CONNECTED"
+            Action: "android.intent.action.ACTION_POWER_CONNECTED"
+            Action: "android.intent.action.ACTION_POWER_DISCONNECTED"
+            Action: "android.net.conn.CONNECTIVITY_CHANGE"
+            Action: "android.net.conn.CONNECTIVITY_CHANGE_IMMEDIATE"
+            Action: "android.net.wifi.STATE_CHANGE"
+            Action: "android.net.wifi.SCAN_RESULTS"
+            Action: "android.net.wifi.RSSI_CHANGED"
+            Action: "com.zing.zalo.intent.action.ACTION_RETRY_DOWNLOAD_APK"
+            Action: "com.zing.zalo.intent.action.ACTION_FINISH_DOWNLOAD_APK"
+            Action: "com.zing.zalo.intent.action.START_ZALO_BACKGROUND_SERVICE"
+            Action: "com.zing.zalo.browser.action.DOWNLOAD_CANCEL"
+            Action: "com.zing.zalo.intent.action.DELETE_NOTIFICATION"
+            Action: "com.zing.zalo.intent.action.ACTION_CANCEL_ACTIVEBYREJECTCALL"
+            Action: "com.zing.zalo.intent.action.FINISH_COCOS_EFFECT"
+          Action: "com.zing.zalo.intent.action.ACTION_COCOS_INPUT_TEXT_CHANGED"
+            Action: "com.zing.zalo.intent.action.ACTION_COCOS_PROCESS_ACTION_LIST"
+            Action: "com.zing.zalo.intent.action.ACTION_FORCE_CLOSE_COCOS"
+            Action: "com.zing.zalo.intent.action.ACTION_DEMAND_WEARABLE"
+            Action: "com.zing.zalo.intent.action.ACTION_RETRY_DOWNLOAD_FILE"
+            mPriority=999, mHasPartialTypes=false
+        com.zing.zalo.intent.action.ACTION_DEMAND_WEARABLE:
+          2768219a com.zing.zalo/.receiver.ZaloReceiver filter 71687c
+            Action: "android.intent.action.BOOT_COMPLETED"
+            Action: "android.intent.action.USER_PRESENT"
+            Action: "android.intent.action.GTALK_CONNECTED"
+            Action: "android.intent.action.ACTION_POWER_CONNECTED"
+            Action: "android.intent.action.ACTION_POWER_DISCONNECTED"
+            Action: "android.net.conn.CONNECTIVITY_CHANGE"
+            Action: "android.net.conn.CONNECTIVITY_CHANGE_IMMEDIATE"
+            Action: "android.net.wifi.STATE_CHANGE"
+            Action: "android.net.wifi.SCAN_RESULTS"
+            Action: "android.net.wifi.RSSI_CHANGED"
+            Action: "com.zing.zalo.intent.action.ACTION_RETRY_DOWNLOAD_APK"
+            Action: "com.zing.zalo.intent.action.ACTION_FINISH_DOWNLOAD_APK"
+            Action: "com.zing.zalo.intent.action.START_ZALO_BACKGROUND_SERVICE"
+            Action: "com.zing.zalo.browser.action.DOWNLOAD_CANCEL"
+            Action: "com.zing.zalo.intent.action.DELETE_NOTIFICATION"
+            Action: "com.zing.zalo.intent.action.ACTION_CANCEL_ACTIVEBYREJECTCALL"
+            Action: "com.zing.zalo.intent.action.FINISH_COCOS_EFFECT"
+            Action: "com.zing.zalo.intent.action.ACTION_COCOS_INPUT_TEXT_CHANGED"
+            Action: "com.zing.zalo.intent.action.ACTION_COCOS_PROCESS_ACTION_LIST"
+            Action: "com.zing.zalo.intent.action.ACTION_FORCE_CLOSE_COCOS"
+            Action: "com.zing.zalo.intent.action.ACTION_DEMAND_WEARABLE"
+            Action: "com.zing.zalo.intent.action.ACTION_RETRY_DOWNLOAD_FILE"
+            mPriority=999, mHasPartialTypes=false
+        com.nokia.pushnotifications.intent.REGISTRATION:
+          248301c1 com.zing.zalo/com.nokia.push.PushBroadcastReceiver filter 1baa9068
+            Action: "com.nokia.pushnotifications.intent.RECEIVE"
+            Action: "com.nokia.pushnotifications.intent.REGISTRATION"
+            Category: "com.zing.zalo"
+        android.intent.action.ACTION_POWER_CONNECTED:
+          2768219a com.zing.zalo/.receiver.ZaloReceiver filter 71687c
+            Action: "android.intent.action.BOOT_COMPLETED"
+            Action: "android.intent.action.USER_PRESENT"
+            Action: "android.intent.action.GTALK_CONNECTED"
+            Action: "android.intent.action.ACTION_POWER_CONNECTED"
+            Action: "android.intent.action.ACTION_POWER_DISCONNECTED"
+            Action: "android.net.conn.CONNECTIVITY_CHANGE"
+            Action: "android.net.conn.CONNECTIVITY_CHANGE_IMMEDIATE"
+            Action: "android.net.wifi.STATE_CHANGE"
+            Action: "android.net.wifi.SCAN_RESULTS"
+            Action: "android.net.wifi.RSSI_CHANGED"
+            Action: "com.zing.zalo.intent.action.ACTION_RETRY_DOWNLOAD_APK"
+            Action: "com.zing.zalo.intent.action.ACTION_FINISH_DOWNLOAD_APK"
+            Action: "com.zing.zalo.intent.action.START_ZALO_BACKGROUND_SERVICE"
+            Action: "com.zing.zalo.browser.action.DOWNLOAD_CANCEL"
+            Action: "com.zing.zalo.intent.action.DELETE_NOTIFICATION"
+            Action: "com.zing.zalo.intent.action.ACTION_CANCEL_ACTIVEBYREJECTCALL"
+            Action: "com.zing.zalo.intent.action.FINISH_COCOS_EFFECT"
+            Action: "com.zing.zalo.intent.action.ACTION_COCOS_INPUT_TEXT_CHANGED"
+            Action: "com.zing.zalo.intent.action.ACTION_COCOS_PROCESS_ACTION_LIST"
+            Action: "com.zing.zalo.intent.action.ACTION_FORCE_CLOSE_COCOS"
+            Action: "com.zing.zalo.intent.action.ACTION_DEMAND_WEARABLE"
+            Action: "com.zing.zalo.intent.action.ACTION_RETRY_DOWNLOAD_FILE"
+            mPriority=999, mHasPartialTypes=false
+        android.provider.Telephony.SMS_RECEIVED:
+          2768219a com.zing.zalo/.receiver.ZaloReceiver filter a077505
+            Action: "android.provider.Telephony.SMS_RECEIVED"
+            Action: "android.provider.telephony.SMS_RECEIVED"
+            Action: "android.intent.action.PHONE_STATE"
+            Category: "android.intent.category.DEFAULT"
+            mPriority=2147483647, mHasPartialTypes=false
+        com.google.android.c2dm.intent.REGISTRATION:
+          193c82a8 com.zing.zalo/com.google.android.gcm.GCMBroadcastReceiver filter 47a178b
+            Action: "com.google.android.c2dm.intent.RECEIVE"
+            Action: "com.google.android.c2dm.intent.REGISTRATION"
+            Category: "com.zing.zalo"
+        android.net.wifi.SCAN_RESULTS:
+          2768219a com.zing.zalo/.receiver.ZaloReceiver filter 71687c
+            Action: "android.intent.action.BOOT_COMPLETED"
+            Action: "android.intent.action.USER_PRESENT"
+            Action: "android.intent.action.GTALK_CONNECTED"
+            Action: "android.intent.action.ACTION_POWER_CONNECTED"
+            Action: "android.intent.action.ACTION_POWER_DISCONNECTED"
+            Action: "android.net.conn.CONNECTIVITY_CHANGE"
+            Action: "android.net.conn.CONNECTIVITY_CHANGE_IMMEDIATE"
+            Action: "android.net.wifi.STATE_CHANGE"
+            Action: "android.net.wifi.SCAN_RESULTS"
+            Action: "android.net.wifi.RSSI_CHANGED"
+            Action: "com.zing.zalo.intent.action.ACTION_RETRY_DOWNLOAD_APK"
+            Action: "com.zing.zalo.intent.action.ACTION_FINISH_DOWNLOAD_APK"
+            Action: "com.zing.zalo.intent.action.START_ZALO_BACKGROUND_SERVICE"
+            Action: "com.zing.zalo.browser.action.DOWNLOAD_CANCEL"
+            Action: "com.zing.zalo.intent.action.DELETE_NOTIFICATION"
+            Action: "com.zing.zalo.intent.action.ACTION_CANCEL_ACTIVEBYREJECTCALL"
+            Action: "com.zing.zalo.intent.action.FINISH_COCOS_EFFECT"
+            Action: "com.zing.zalo.intent.action.ACTION_COCOS_INPUT_TEXT_CHANGED"
+            Action: "com.zing.zalo.intent.action.ACTION_COCOS_PROCESS_ACTION_LIST"
+            Action: "com.zing.zalo.intent.action.ACTION_FORCE_CLOSE_COCOS"
+            Action: "com.zing.zalo.intent.action.ACTION_DEMAND_WEARABLE"
+            Action: "com.zing.zalo.intent.action.ACTION_RETRY_DOWNLOAD_FILE"
+            mPriority=999, mHasPartialTypes=false
+        com.nokia.pushnotifications.intent.RECEIVE:
+          248301c1 com.zing.zalo/com.nokia.push.PushBroadcastReceiver filter 1baa9068
+            Action: "com.nokia.pushnotifications.intent.RECEIVE"
+            Action: "com.nokia.pushnotifications.intent.REGISTRATION"
+            Category: "com.zing.zalo"
+        com.zing.zalo.intent.action.ACTION_CANCEL_ACTIVEBYREJECTCALL:
+          2768219a com.zing.zalo/.receiver.ZaloReceiver filter 71687c
+            Action: "android.intent.action.BOOT_COMPLETED"
+            Action: "android.intent.action.USER_PRESENT"
+            Action: "android.intent.action.GTALK_CONNECTED"
+            Action: "android.intent.action.ACTION_POWER_CONNECTED"
+            Action: "android.intent.action.ACTION_POWER_DISCONNECTED"
+            Action: "android.net.conn.CONNECTIVITY_CHANGE"
+            Action: "android.net.conn.CONNECTIVITY_CHANGE_IMMEDIATE"
+            Action: "android.net.wifi.STATE_CHANGE"
+            Action: "android.net.wifi.SCAN_RESULTS"
+            Action: "android.net.wifi.RSSI_CHANGED"
+            Action: "com.zing.zalo.intent.action.ACTION_RETRY_DOWNLOAD_APK"
+            Action: "com.zing.zalo.intent.action.ACTION_FINISH_DOWNLOAD_APK"
+            Action: "com.zing.zalo.intent.action.START_ZALO_BACKGROUND_SERVICE"
+            Action: "com.zing.zalo.browser.action.DOWNLOAD_CANCEL"
+            Action: "com.zing.zalo.intent.action.DELETE_NOTIFICATION"
+            Action: "com.zing.zalo.intent.action.ACTION_CANCEL_ACTIVEBYREJECTCALL"
+            Action: "com.zing.zalo.intent.action.FINISH_COCOS_EFFECT"
+            Action: "com.zing.zalo.intent.action.ACTION_COCOS_INPUT_TEXT_CHANGED"
+            Action: "com.zing.zalo.intent.action.ACTION_COCOS_PROCESS_ACTION_LIST"
+            Action: "com.zing.zalo.intent.action.ACTION_FORCE_CLOSE_COCOS"
+            Action: "com.zing.zalo.intent.action.ACTION_DEMAND_WEARABLE"
+            Action: "com.zing.zalo.intent.action.ACTION_RETRY_DOWNLOAD_FILE"
+            mPriority=999, mHasPartialTypes=false
+
+  Service Resolver Table:
+    Non-Data Actions:
+        com.zing.zalo.intent.action.PICK_SERVICE:
+          1296bd66 com.zing.zalo/.service.ZaloBackgroundService filter 1273564e
+            Action: "com.zing.zalo.intent.action.PICK_SERVICE"
+            Category: "com.zing.zalo.intent.category.ZALO_SERVICE"
+        android.content.SyncAdapter:
+          3ac7e8a7 com.zing.zalo/.service.SyncService filter 2192750
+            Action: "android.content.SyncAdapter"
+        android.accounts.AccountAuthenticator:
+          82b2154 com.zing.zalo/.service.AuthenticationService filter 304a9913
+            Action: "android.accounts.AccountAuthenticator"
+        com.zing.zalo.intent.action.KEEP_ALIVE_SERVICE_STARTER:
+          397cf8fd com.zing.zalo/.service.ZaloKeepAliveService filter dbbb36f
+            Action: "com.zing.zalo.intent.action.KEEP_ALIVE_SERVICE_STARTER"
+        android.service.chooser.ChooserTargetService:
+          1ec149f2 com.zing.zalo/.service.DirectShareChooserService filter 6904d49
+            Action: "android.service.chooser.ChooserTargetService"
+
+  Permissions:
+    Permission [com.zing.zalo.permission.C2D_MESSAGE] (20006843):
+      sourcePackage=com.zing.zalo
+      uid=10176 gids=[] type=0 prot=signature
+      packageSetting=PackageSetting{26c2fec0 com.zing.zalo/10176}
+      perm=Permission{332527f9 com.zing.zalo.permission.C2D_MESSAGE}
+    Permission [com.zing.zalo.permission.BIND_ZALO_SERVICE] (3c96133e):
+      sourcePackage=com.zing.zalo
+      uid=10176 gids=[] type=0 prot=normal
+      packageSetting=PackageSetting{26c2fec0 com.zing.zalo/10176}
+      perm=Permission{25b7459f com.zing.zalo.permission.BIND_ZALO_SERVICE}
+    Permission [zing.zalo.permission.ZALO_SERVICE] (1e3946ec):
+      sourcePackage=com.zing.zalo
+      uid=10176 gids=[] type=0 prot=signature
+      packageSetting=PackageSetting{26c2fec0 com.zing.zalo/10176}
+      perm=Permission{18874ab5 zing.zalo.permission.ZALO_SERVICE}
+
+  Registered ContentProviders:
+    com.zing.zalo/zm.voip.db.DBProvider:
+      Provider{275c254a com.zing.zalo/zm.voip.db.DBProvider}
+    com.zing.zalo/zm.voip.service.PreferenceProvider:
+      Provider{36d49cbb com.zing.zalo/zm.voip.service.PreferenceProvider}
+    com.zing.zalo/.db.PreferencesProvider:
+      Provider{13e9e5d8 com.zing.zalo/.db.PreferencesProvider}
+
+  ContentProvider Authorities:
+    [zm.voip.db]:
+      Provider{275c254a com.zing.zalo/zm.voip.db.DBProvider}
+        applicationInfo=ApplicationInfo{1baedd31 com.zing.zalo}
+    [zm.voip.prefs]:
+      Provider{36d49cbb com.zing.zalo/zm.voip.service.PreferenceProvider}
+        applicationInfo=ApplicationInfo{1baedd31 com.zing.zalo}
+    [com.zing.zalo.db.preferencesprovider]:
+      Provider{13e9e5d8 com.zing.zalo/.db.PreferencesProvider}
+        applicationInfo=ApplicationInfo{1baedd31 com.zing.zalo}
+
+  Key Set Manager:
+    [com.zing.zalo]
+        Signing KeySets: 1068
+
+  Packages:
+    Package [com.zing.zalo] (26c2fec0):
+      userId=10176 gids=[3003, 1028, 1015, 3002]
+      pkg=Package{15bf4c16 com.zing.zalo}
+      codePath=/data/app/com.zing.zalo-1
+      resourcePath=/data/app/com.zing.zalo-1
+      legacyNativeLibraryDir=/data/app/com.zing.zalo-1/lib
+      primaryCpuAbi=armeabi
+      secondaryCpuAbi=null
+      nativeLibraryRootDir=/data/app/com.zing.zalo-1/lib
+      nativeLibraryDir=/data/app/com.zing.zalo-1/lib/arm
+      secondaryNativeLibraryDir=null
+      nativeLibraryRootRequiresIsa=true
+      dexMode=full art
+      dexTimeStamp=2017-03-08 15:11:47
+      versionCode=12100189 targetSdk=23
+      versionName=3.1.8.r4
+      applicationInfo=ApplicationInfo{1baedd31 com.zing.zalo}
+      flags=[ HAS_CODE ALLOW_CLEAR_USER_DATA ALLOW_BACKUP LARGE_HEAP ]
+      dataDir=/data/data/com.zing.zalo
+      supportsScreens=[small, medium, large, xlarge, resizeable, anyDensity]
+      timeStamp=2017-03-08 15:11:24
+      firstInstallTime=2016-12-15 21:53:33
+      lastUpdateTime=2017-03-08 15:11:30
+      installerPackageName=com.android.vending
+      signatures=PackageSignatures{3aa64997 [25038784]}
+      permissionsFixed=true haveGids=true installStatus=1
+      pkgFlags=[ HAS_CODE ALLOW_CLEAR_USER_DATA ALLOW_BACKUP LARGE_HEAP ]
+      User 0:  installed=true hidden=false stopped=false notLaunched=false enabled=0
+      grantedPermissions:
+        android.permission.DISABLE_KEYGUARD
+        zing.zalo.permission.ZALO_SERVICE
+        android.permission.READ_PHONE_STATE
+        android.permission.RECEIVE_SMS
+        android.permission.READ_CONTACTS
+        android.permission.READ_SMS
+        android.permission.WAKE_LOCK
+        android.permission.GET_ACCOUNTS
+        android.permission.CAMERA
+        com.google.android.providers.gsf.permission.READ_GSERVICES
+        com.zing.zalo.permission.C2D_MESSAGE
+        android.permission.FLASHLIGHT
+        android.permission.WRITE_CONTACTS
+        com.android.launcher.permission.INSTALL_SHORTCUT
+        com.google.android.c2dm.permission.RECEIVE
+        android.permission.VIBRATE
+        android.permission.ACCESS_NETWORK_STATE
+        android.permission.SET_WALLPAPER
+        android.permission.INTERNET
+        android.permission.ACCESS_COARSE_LOCATION
+        android.permission.WRITE_SETTINGS
+        android.permission.RECORD_AUDIO
+        android.permission.WRITE_CALL_LOG
+      android.permission.WRITE_EXTERNAL_STORAGE
+        android.permission.GET_TASKS
+        android.permission.ACCESS_FINE_LOCATION
+        android.permission.BROADCAST_STICKY
+        android.permission.READ_PROFILE
+        android.permission.BLUETOOTH
+        android.permission.MODIFY_AUDIO_SETTINGS
+        android.permission.RECEIVE_BOOT_COMPLETED
+        android.permission.READ_EXTERNAL_STORAGE
+        com.zing.zalo.permission.BIND_ZALO_SERVICE
+        android.permission.CALL_PHONE
+        android.permission.ACCESS_WIFI_STATE
+
+DUMP OF SERVICE activity:
+  ACTIVITY MANAGER PENDING INTENTS (dumpsys activity intents)
+    * PendingIntentRecord{29e31b6d com.zing.zalo startActivity}
+      uid=10176 packageName=com.zing.zalo type=startActivity flags=0x0
+      requestCode=983537582 requestResolvedType=null
+      requestIntent=cmp=com.zing.zalo/.ui.MissCallActivity (has extras)
+    * PendingIntentRecord{2b5c13a2 com.zing.zalo broadcastIntent}
+      uid=10176 packageName=com.zing.zalo type=broadcastIntent flags=0x0
+      requestCode=158706141 requestResolvedType=null
+      requestIntent=act=com.zing.zalo.intent.action.DELETE_NOTIFICATION (has extras)
+      sent=true canceled=false
+    * PendingIntentRecord{157be833 com.zing.zalo startActivity}
+      uid=10176 packageName=com.zing.zalo type=startActivity flags=0x0
+      requestCode=169583466 requestResolvedType=null
+      requestIntent=act=com.zing.zalo.action.ACTION_SHOW_ZALO_VIEW flg=0x4000000 cmp=com.zing.zalo/.ui.ZaloLauncherActivity (has extras)
+    * PendingIntentRecord{30f397f0 com.zing.zalo broadcastIntent}
+      uid=10176 packageName=com.zing.zalo type=broadcastIntent flags=0x0
+      requestCode=35023228 requestResolvedType=null
+      requestIntent=act=com.zing.zalo.intent.action.ACTION_DEMAND_WEARABLE cmp=com.zing.zalo/.receiver.ZaloReceiver (has extras)
+    * PendingIntentRecord{3a30169 com.zing.zalo broadcastIntent}
+      uid=10176 packageName=com.zing.zalo type=broadcastIntent flags=0x0
+      requestCode=23115604 requestResolvedType=null
+      requestIntent=act=com.zing.zalo.intent.action.ACTION_DEMAND_WEARABLE cmp=com.zing.zalo/.receiver.ZaloReceiver (has extras)
+    * PendingIntentRecord{1eba6612 com.zing.zalo broadcastIntent}
+      uid=10176 packageName=com.zing.zalo type=broadcastIntent flags=0x0
+      requestIntent=act=com.zing.zalo.actionlog
+      sent=true canceled=false
+    * PendingIntentRecord{370bc7ee com.zing.zalo broadcastIntent}
+      uid=10176 packageName=com.zing.zalo type=broadcastIntent flags=0x0
+      requestCode=35158709 requestResolvedType=null
+      requestIntent=act=com.zing.zalo.intent.action.ACTION_DEMAND_WEARABLE cmp=com.zing.zalo/.receiver.ZaloReceiver (has extras)
+    * PendingIntentRecord{1702d48f com.zing.zalo broadcastIntent}
+      uid=10176 packageName=com.zing.zalo type=broadcastIntent flags=0x0
+      requestCode=34824655 requestResolvedType=null
+      requestIntent=act=com.zing.zalo.intent.action.ACTION_DEMAND_WEARABLE cmp=com.zing.zalo/.receiver.ZaloReceiver (has extras)
+    * PendingIntentRecord{1e92431c com.zing.zalo broadcastIntent}
+      uid=10176 packageName=com.zing.zalo type=broadcastIntent flags=0x0
+      requestCode=205041 requestResolvedType=null
+      requestIntent=act=com.zing.zalo.intent.action.DELETE_NOTIFICATION (has extras)
+    * PendingIntentRecord{18614b25 com.zing.zalo startActivity}
+      uid=10176 packageName=com.zing.zalo type=startActivity flags=0x0
+      requestCode=9173831 requestResolvedType=null
+      requestIntent=act=com.zing.zalo.action.ACTION_SHOW_ZALO_VIEW flg=0x4000000 cmp=com.zing.zalo/.ui.ZaloLauncherActivity (has extras)
+      sent=true canceled=false
+    * PendingIntentRecord{9f074fa com.zing.zalo broadcastIntent}
+      uid=10176 packageName=com.zing.zalo type=broadcastIntent flags=0x0
+      requestCode=34936408 requestResolvedType=null
+      requestIntent=act=com.zing.zalo.intent.action.ACTION_DEMAND_WEARABLE cmp=com.zing.zalo/.receiver.ZaloReceiver (has extras)
+    * PendingIntentRecord{32622aab com.zing.zalo broadcastIntent}
+      uid=10176 packageName=com.zing.zalo type=broadcastIntent flags=0x0
+      requestIntent=act=com.zing.zalo.ads.receiver.AdsTrackingManager.SubmitBatch
+    * PendingIntentRecord{80e7508 com.zing.zalo broadcastIntent}
+      uid=10176 packageName=com.zing.zalo type=broadcastIntent flags=0x0
+      requestCode=31916149 requestResolvedType=null
+      requestIntent=act=com.zing.zalo.intent.action.ACTION_DEMAND_WEARABLE cmp=com.zing.zalo/.receiver.ZaloReceiver (has extras)
+    * PendingIntentRecord{220074a1 com.zing.zalo broadcastIntent}
+      uid=10176 packageName=com.zing.zalo type=broadcastIntent flags=0x0
+      requestCode=34902185 requestResolvedType=null
+      requestIntent=act=com.zing.zalo.intent.action.ACTION_DEMAND_WEARABLE cmp=com.zing.zalo/.receiver.ZaloReceiver (has extras)
+    * PendingIntentRecord{3340e6c6 com.zing.zalo startActivity}
+      uid=10176 packageName=com.zing.zalo type=startActivity flags=0x0
+      requestCode=205041 requestResolvedType=null
+      requestIntent=act=com.zing.zalo.action.ACTION_SHOW_ZALO_VIEW flg=0x4000000 cmp=com.zing.zalo/.ui.ZaloLauncherActivity (has extras)
+    * PendingIntentRecord{1c16c687 com.zing.zalo startActivity}
+      uid=10176 packageName=com.zing.zalo type=startActivity flags=0x0
+      requestCode=3 requestResolvedType=null
+      requestIntent=act=com.zing.zalo.action.ACTION_SHOW_ZALO_VIEW flg=0x4000000 cmp=com.zing.zalo/.ui.ZaloLauncherActivity (has extras)
+    * PendingIntentRecord{13b4cf27 com.zing.zalo broadcastIntent}
+      uid=10176 packageName=com.zing.zalo type=broadcastIntent flags=0x0
+      requestIntent=act=com.zing.zalo.intent.action.START_ZALO_BACKGROUND_SERVICE cmp=com.zing.zalo/.receiver.AlarmReceiver
+      sent=true canceled=false
+    * PendingIntentRecord{3999d9b4 com.zing.zalo broadcastIntent}
+      uid=10176 packageName=com.zing.zalo type=broadcastIntent flags=0x0
+      requestCode=34753105 requestResolvedType=null
+      requestIntent=act=com.zing.zalo.intent.action.ACTION_DEMAND_WEARABLE cmp=com.zing.zalo/.receiver.ZaloReceiver (has extras)
+    * PendingIntentRecord{3c0eb9dd com.zing.zalo broadcastIntent}
+      uid=10176 packageName=com.zing.zalo type=broadcastIntent flags=0x0
+      requestCode=102125473 requestResolvedType=null
+      requestIntent=act=com.zing.zalo.intent.action.ACTION_DEMAND_WEARABLE cmp=com.zing.zalo/.receiver.ZaloReceiver (has extras)
+    * PendingIntentRecord{2cd4a952 com.zing.zalo broadcastIntent}
+      uid=10176 packageName=com.zing.zalo type=broadcastIntent flags=0x0
+      requestCode=169583466 requestResolvedType=null
+      requestIntent=act=com.zing.zalo.intent.action.DELETE_NOTIFICATION (has extras)
+    * PendingIntentRecord{298f4423 com.zing.zalo broadcastIntent}
+      uid=10176 packageName=com.zing.zalo type=broadcastIntent flags=0x0
+      requestCode=34882133 requestResolvedType=null
+      requestIntent=act=com.zing.zalo.intent.action.ACTION_DEMAND_WEARABLE cmp=com.zing.zalo/.receiver.ZaloReceiver (has extras)
+    * PendingIntentRecord{2ed4dd20 com.zing.zalo broadcastIntent}
+      uid=10176 packageName=com.zing.zalo type=broadcastIntent flags=0x0
+      requestCode=34975635 requestResolvedType=null
+      requestIntent=act=com.zing.zalo.intent.action.ACTION_DEMAND_WEARABLE cmp=com.zing.zalo/.receiver.ZaloReceiver (has extras)
+    * PendingIntentRecord{32c216d9 com.zing.zalo startActivity}
+      uid=10176 packageName=com.zing.zalo type=startActivity flags=0x0
+      requestCode=-256464408 requestResolvedType=null
+      requestIntent=act=com.zing.zalo.action.ACTION_SHOW_ZALO_VIEW flg=0x4000000 cmp=com.zing.zalo/.ui.ZaloLauncherActivity (has extras)
+      sent=true canceled=false
+    * PendingIntentRecord{470089e com.zing.zalo broadcastIntent}
+      uid=10176 packageName=com.zing.zalo type=broadcastIntent flags=0x0
+      requestCode=35099672 requestResolvedType=null
+      requestIntent=act=com.zing.zalo.intent.action.ACTION_DEMAND_WEARABLE cmp=com.zing.zalo/.receiver.ZaloReceiver (has extras)
+    * PendingIntentRecord{e87ff7f com.zing.zalo startActivity}
+      uid=10176 packageName=com.zing.zalo type=startActivity flags=0x0
+      requestCode=158706141 requestResolvedType=null
+      requestIntent=act=com.zing.zalo.action.ACTION_SHOW_ZALO_VIEW flg=0x4000000 cmp=com.zing.zalo/.ui.ZaloLauncherActivity (has extras)
+      sent=true canceled=false
+
+  -------------------------------------------------------------------------------
+  ACTIVITY MANAGER BROADCAST STATE (dumpsys activity broadcasts)
+    Registered Receivers:
+    * ReceiverList{330367a 30577 com.zing.zalo/10176/u0 remote:aa922a5}
+      app=30577:com.zing.zalo/u0a176 pid=30577 uid=10176 user=0
+      Filter #0: BroadcastFilter{287c8e2b}
+        Action: "com.zing.zalo.ads.receiver.AdsTrackingManager.SubmitBatch"
+    * ReceiverList{303582ed 30577 com.zing.zalo/10176/u0 remote:1408dd04}
+      app=30577:com.zing.zalo/u0a176 pid=30577 uid=10176 user=0
+      Filter #0: BroadcastFilter{4fb2522}
+        Action: "android.provider.Telephony.SMS_RECEIVED"
+        Category: "android.intent.category.DEFAULT"
+        mPriority=2147483647, mHasPartialTypes=false
+        requiredPermission=android.permission.BROADCAST_SMS
+    * ReceiverList{231b1ad2 30577 com.zing.zalo/10176/u0 remote:158a015d}
+      app=30577:com.zing.zalo/u0a176 pid=30577 uid=10176 user=0
+      Filter #0: BroadcastFilter{52297a3}
+        Action: "com.zing.zalo.worker.AlarmSettingController.Chat"
+    * ReceiverList{3056000f 30577 com.zing.zalo/10176/u0 remote:3d4a716e}
+      app=30577:com.zing.zalo/u0a176 pid=30577 uid=10176 user=0
+      Filter #0: BroadcastFilter{233cc89c}
+        Action: "com.zing.zalo.actionlog"
+    * ReceiverList{2033e207 30577 com.zing.zalo/10176/u0 remote:2a7b4046}
+      app=30577:com.zing.zalo/u0a176 pid=30577 uid=10176 user=0
+      Filter #0: BroadcastFilter{1d5f8f34}
+        Action: "android.intent.action.SCREEN_ON"
+        Action: "android.intent.action.SCREEN_OFF"
+
+    Receiver Resolver Table:
+      Non-Data Actions:
+          android.intent.action.SCREEN_OFF:
+            BroadcastFilter{1d5f8f34 u0 ReceiverList{2033e207 30577 com.zing.zalo/10176/u0 remote:2a7b4046}}
+          com.zing.zalo.ads.receiver.AdsTrackingManager.SubmitBatch:
+            BroadcastFilter{287c8e2b u0 ReceiverList{330367a 30577 com.zing.zalo/10176/u0 remote:aa922a5}}
+          android.intent.action.SCREEN_ON:
+            BroadcastFilter{1d5f8f34 u0 ReceiverList{2033e207 30577 com.zing.zalo/10176/u0 remote:2a7b4046}}
+          com.zing.zalo.actionlog:
+            BroadcastFilter{233cc89c u0 ReceiverList{3056000f 30577 com.zing.zalo/10176/u0 remote:3d4a716e}}
+          com.zing.zalo.worker.AlarmSettingController.Chat:
+            BroadcastFilter{52297a3 u0 ReceiverList{231b1ad2 30577 com.zing.zalo/10176/u0 remote:158a015d}}
+          android.provider.Telephony.SMS_RECEIVED:
+            BroadcastFilter{4fb2522 u0 ReceiverList{303582ed 30577 com.zing.zalo/10176/u0 remote:1408dd04}}
+
+    Historical broadcasts [background]:
+    Historical Broadcast background #8:
+      BroadcastRecord{3afaab4c u0 com.zing.zalo.ads.receiver.AdsTrackingManager.SubmitBatch} to user 0
+      Intent { act=com.zing.zalo.ads.receiver.AdsTrackingManager.SubmitBatch flg=0x14 (has extras) }
+        extras: Bundle[{android.intent.extra.ALARM_TARGET_TIME=525282106, android.intent.extra.ALARM_COUNT=1}]
+      caller=com.zing.zalo null pid=-1 uid=10176
+      enqueueClockTime=Thu Mar 16 14:55:55 GMT+07:00 2017
+      dispatchClockTime=Thu Mar 16 14:55:56 GMT+07:00 2017
+      dispatchTime=-1m21s138ms finishTime=-1m21s127ms ,dur=11 ms
+      resultTo=null resultCode=0 resultData=null
+      resultAbort=false ordered=true sticky=false initialSticky=false
+      nextReceiver=1 receiver=null
+      Receiver #0 : deferred=false : BroadcastFilter{287c8e2b u0 ReceiverList{330367a 30577 com.zing.zalo/10176/u0 remote:aa922a5}}
+
+    mBroadcastsScheduled [foreground]=false
+    mBroadcastsScheduled [deferred]=false
+    mBroadcastsScheduled [background]=false
+    mHandler:
+      Handler (com.android.server.am.ActivityManagerService$MainHandler) {5b44795} @ 229855537
+        Looper (ActivityManager, tid 27) {dd010aa}
+          Message 0: { when=+3m38s719ms callback=com.android.server.AppOpsService$1 target=com.android.server.am.ActivityManagerService$MainHandler }
+          Message 1: { when=+10m18s569ms what=27 target=com.android.server.am.ActivityManagerService$MainHandler }
+          Message 2: { when=+12h12m17s750ms callback=com.android.server.am.ActiveServices$ServiceRestarter target=com.android.server.am.ActivityManagerService$MainHandler }
+          (Total messages: 3, idling=true, quitting=false)
+
+  -------------------------------------------------------------------------------
+  ACTIVITY MANAGER CONTENT PROVIDERS (dumpsys activity providers)
+    Published user 0 content providers (by class):
+    * ContentProviderRecord{1427149b u0 com.zing.zalo/.db.PreferencesProvider}
+      package=com.zing.zalo process=com.zing.zalo
+      proc=ProcessRecord{147698e 30577:com.zing.zalo/u0a176}
+      uid=10176 provider=android.content.ContentProviderProxy@7cd3038
+      authority=com.zing.zalo.db.preferencesprovider
+    * ContentProviderRecord{1a5ec811 u0 com.zing.zalo/zm.voip.db.DBProvider}
+      package=com.zing.zalo process=com.zing.zalo
+      proc=ProcessRecord{147698e 30577:com.zing.zalo/u0a176}
+      uid=10176 provider=android.content.ContentProviderProxy@29768d76
+      authority=zm.voip.db
+    * ContentProviderRecord{25d85f77 u0 com.zing.zalo/zm.voip.service.PreferenceProvider}
+      package=com.zing.zalo process=com.zing.zalo
+      proc=ProcessRecord{147698e 30577:com.zing.zalo/u0a176}
+      uid=10176 provider=android.content.ContentProviderProxy@174117e4
+      authority=zm.voip.prefs
+
+    User 0 authority to provider mappings:
+    zm.voip.db: 1a5ec811/com.zing.zalo/zm.voip.db.DBProvider
+    zm.voip.prefs: 25d85f77/com.zing.zalo/zm.voip.service.PreferenceProvider
+    com.zing.zalo.db.preferencesprovider: 1427149b/com.zing.zalo/.db.PreferencesProvider
+
+  -------------------------------------------------------------------------------
+  ACTIVITY MANAGER SERVICES (dumpsys activity services)
+    User 0 active services:
+    * ServiceRecord{16eb1bde u0 com.zing.zalo/.service.ZaloBackgroundService}
+      intent={act=com.zing.zalo.intent.action.PICK_SERVICE cmp=com.zing.zalo/.service.ZaloBackgroundService}
+      packageName=com.zing.zalo
+      processName=com.zing.zalo
+      permission=zing.zalo.permission.ZALO_SERVICE
+      baseDir=/data/app/com.zing.zalo-1/base.apk
+      dataDir=/data/data/com.zing.zalo
+      app=ProcessRecord{147698e 30577:com.zing.zalo/u0a176}
+      createTime=-1h33m4s139ms startingBgTimeout=-1h14m55s165ms
+      lastActivity=-12m40s749ms restartTime=-12m41s156ms createdFromFg=false
+      startRequested=true delayedStop=false stopIfKilled=false callStart=true lastStartId=10
+      restartCount=1 restartDelay=-2d15h50m54s538ms nextRestartTime=-12m41s240ms crashCount=0
+
+  -------------------------------------------------------------------------------
+  ACTIVITY MANAGER RECENT TASKS (dumpsys activity recents)
+    (nothing)
+
+  -------------------------------------------------------------------------------
+  ACTIVITY MANAGER ACTIVITIES (dumpsys activity activities)
+  Display #0 (activities from top to bottom):
+    (nothing)
+
+  -------------------------------------------------------------------------------
+  ACTIVITY MANAGER RUNNING PROCESSES (dumpsys activity processes)
+    All known processes:
+    *APP* UID 10176 ProcessRecord{147698e 30577:com.zing.zalo/u0a176}
+      user #0 uid=10176
+      class=com.zing.zalo.app.MainApplication
+      dir=/data/app/com.zing.zalo-1/base.apk publicDir=/data/app/com.zing.zalo-1/base.apk data=/data/data/com.zing.zalo
+      packageList={com.zing.zalo}
+      compat={240dpi}
+      thread=android.app.ApplicationThreadProxy@1a56d44d
+      pid=30577 starting=false
+      lastActivityTime=-5m57s682ms lastPssTime=-12m17s106ms nextPssTime=+7m42s836ms
+      adjSeq=669217 lruSeq=0 lastPss=32580 lastCachedPss=0
+      cached=false empty=true
+      serviceb=true serviceHighRam=false
+      oom: max=16 curRaw=8 setRaw=8 cur=8 set=8
+      curSchedGroup=0 setSchedGroup=0 systemNoUi=false trimMemoryLevel=0
+      curProcState=7 repProcState=7 pssProcState=7 setProcState=7 lastStateTime=-12m41s156ms
+      hasStartedServices=true
+      lastWakeTime=0 timeUsed=0
+      lastCpuTime=0 timeUsed=0
+      lastRequestedGc=-12m41s156ms lastLowMemory=-12m41s156ms reportLowMemory=false
+      Services:
+        - ServiceRecord{16eb1bde u0 com.zing.zalo/.service.ZaloBackgroundService}
+      Published Providers:
+        - com.zing.zalo.db.PreferencesProvider
+          -> ContentProviderRecord{1427149b u0 com.zing.zalo/.db.PreferencesProvider}
+        - zm.voip.service.PreferenceProvider
+          -> ContentProviderRecord{25d85f77 u0 com.zing.zalo/zm.voip.service.PreferenceProvider}
+        - zm.voip.db.DBProvider
+          -> ContentProviderRecord{1a5ec811 u0 com.zing.zalo/zm.voip.db.DBProvider}
+      Connected Providers:
+        - 2c360b02/com.android.providers.settings/.SettingsProvider->30577:com.zing.zalo/u0a176 s1/1 u0/0 +12m38s444ms
+      Receivers:
+        - ReceiverList{330367a 30577 com.zing.zalo/10176/u0 remote:aa922a5}
+        - ReceiverList{2033e207 30577 com.zing.zalo/10176/u0 remote:2a7b4046}
+        - ReceiverList{231b1ad2 30577 com.zing.zalo/10176/u0 remote:158a015d}
+        - ReceiverList{303582ed 30577 com.zing.zalo/10176/u0 remote:1408dd04}
+        - ReceiverList{3056000f 30577 com.zing.zalo/10176/u0 remote:3d4a716e}
+
+    Process LRU list (sorted by oom_adj, 38 total, non-act at 4, non-svc at 4):
+      Proc #22: svcb  B/ /S  trm: 0 30577:com.zing.zalo/u0a176 (started-services)
+
+    PID mappings:
+      PID #30577: ProcessRecord{147698e 30577:com.zing.zalo/u0a176}
+    mPreviousProcessVisibleTime: +2d15h43m52s946ms
+    mProcessLimit: 6
+    mProcessLimitOverride: -1
+    ProcessList.mMaxCached: 3
+    mConfigWillChange: false
+    TRIM_EMPTY_APPS: 7
+    TRIM_CACHED_APPS: 2
+    TRIM_CRITICAL_THRESHOLD: 3
+    TRIM_LOW_THRESHOLD: 5
+
+  -------------------------------------------------------------------------------
+  ACTIVITY MANAGER SPCM (dumpsys activity spcm)
+  mActivePackages ---
+  --PackageName com.bookmark.money--Score 8271 --Score_applocking 0 --LockingOnly: false
+  --PackageName com.campmobile.snow--Score 0 --Score_applocking 0 --LockingOnly: false
+  --PackageName com.example.android.testing.notes.test--Score 0 --Score_applocking 0 --LockingOnly: false
+  --PackageName com.fortafygames.colorswitch--Score 0 --Score_applocking 0 --LockingOnly: false
+  --PackageName com.doctor.bkdictionary--Score 12994 --Score_applocking 0 --LockingOnly: false
+  --PackageName org.isoron.uhabits--Score 9138 --Score_applocking 0 --LockingOnly: false
+  --PackageName org.telegram.messenger.beta--Score 12795 --Score_applocking 0 --LockingOnly: false
+  --PackageName com.example.tts.myapplication--Score 0 --Score_applocking 0 --LockingOnly: false
+  --PackageName com.eolwral.osmonitor--Score 0 --Score_applocking 0 --LockingOnly: false
+  --PackageName com.ogqcorp.bgh--Score 0 --Score_applocking 0 --LockingOnly: false
+  --PackageName com.wered.sensorsmultitool--Score 0 --Score_applocking 0 --LockingOnly: false
+  --PackageName com.leodesol.games.puzzlecollection--Score 9186 --Score_applocking 0 --LockingOnly: false
+  --PackageName com.KickBack.LostEchoAdventure--Score 0 --Score_applocking 0 --LockingOnly: false
+  --PackageName jp.co.recruit.floatingview--Score 0 --Score_applocking 0 --LockingOnly: false
+  --PackageName com.learnopengles.android--Score 0 --Score_applocking 0 --LockingOnly: false
+  --PackageName com.tts.practice.habitstracker--Score 12209 --Score_applocking 0 --LockingOnly: false
+  --PackageName com.example.android.gles--Score 2421 --Score_applocking 0 --LockingOnly: false
+  --PackageName com.maximko.cuber--Score 0 --Score_applocking 0 --LockingOnly: false
+  --PackageName com.example.android.testing.notes.mock.test--Score 0 --Score_applocking 0 --LockingOnly: false
+  --PackageName vn.com.vng.zalopay--Score 0 --Score_applocking 0 --LockingOnly: false
+  --PackageName com.google.android.apps.translate--Score 0 --Score_applocking 0 --LockingOnly: false
+  --PackageName org.isoron.uhabits.old--Score 0 --Score_applocking 0 --LockingOnly: false
+  --PackageName com.zing.zalo.faceapp--Score 0 --Score_applocking 0 --LockingOnly: false
+  --PackageName com.packtpub.ndkmastering--Score 0 --Score_applocking 0 --LockingOnly: false
+  --PackageName kellinwood.zipsigner2--Score 0 --Score_applocking 0 --LockingOnly: false
+  --PackageName pl.macaque.Missiles--Score 8846 --Score_applocking 0 --LockingOnly: false
+  --PackageName com.deviantart.android.damobile--Score 0 --Score_applocking 0 --LockingOnly: false
+  --PackageName com.google.android.apps.fireball--Score 8919 --Score_applocking 0 --LockingOnly: false
+  --PackageName org.tensorflow.demo--Score 8848 --Score_applocking 0 --LockingOnly: false
+  --PackageName com.zing.zalo--Score 13738 --Score_applocking 0 --LockingOnly: false
+  --PackageName com.anydo--Score 10547 --Score_applocking 0 --LockingOnly: false
+  mInActivePackages ---
+  --PackageName com.tts.practice.glidegallery--Score 2447 --Score_applocking 0 --LockingOnly: false
+  --PackageName com.happening.studios.swipeforfacebookfree--Score 9652 --Score_applocking 0 --LockingOnly: false
+  mExternalWhiteList ---
+  --PackageName com.google.android.projection.gearhead
+  --PackageName com.google.android.projection.top
+  --PackageName com.jb.emoji.gokeyboard
+  --PackageName com.google.android.inputmethod.latin
+  --PackageName com.estsoft.android.keyboard
+  --PackageName com.touchtype.swiftkey
+  --PackageName com.google.android.inputmethod.korean
+  --PackageName com.socialnmobile.hangulkeyboard
+  --PackageName com.fiberthemax.OpQ2keyboard
+  --PackageName com.gingersoftware.android.keyboard
+  --PackageName net.cdeguet.smartkeyboardtrial
+  --PackageName com.syntellia.fleksy.keyboard
+  --PackageName com.emoji.keyboard.touchpal
+  --PackageName com.klye.ime.latin
+  --PackageName com.nuance.swype
+  --PackageName com.nuance.swype.dtc
+  --PackageName com.dingulHangul.dingulHangulKeyboard_dinki
+  --PackageName com.garmin.android.apps.connectmobile
+  mSPCMDBfromSMList ---
+  --PackageName com.bookmark.money : 0 : 1489556796734 : false : 0
+  --PackageName com.zing.zalo : 0 : 1489650836866 : false : 0
+  --PackageName com.campmobile.snow : 1 : 1488889070340 : false : 0
+  --PackageName com.fortafygames.colorswitch : 1 : 1489027121170 : false : 0
+  --PackageName com.doctor.bkdictionary : 0 : 1489650836866 : false : 0
+  --PackageName org.isoron.uhabits : 0 : 1489575296542 : false : 0
+  --PackageName org.telegram.messenger.beta : 0 : 1489647236817 : false : 0
+  --PackageName com.example.tts.myapplication : 1 : 1489030857126 : false : 0
+  --PackageName com.eolwral.osmonitor : 1 : 1488529936511 : false : 0
+  --PackageName com.ogqcorp.bgh : 1 : 1488685515436 : false : 0
+  --PackageName com.wered.sensorsmultitool : 1 : 1489220551049 : false : 0
+  --PackageName com.happening.studios.swipeforfacebookfree : 0 : 1489584008567 : false : 0
+  --PackageName com.leodesol.games.puzzlecollection : 0 : 1489575296542 : false : 0
+  --PackageName com.KickBack.LostEchoAdventure : 1 : 1488350100036 : false : 0
+  --PackageName jp.co.recruit.floatingview : 1 : 1488854232482 : false : 0
+  --PackageName com.learnopengles.android : 1 : 1487331866713 : false : 0
+  --PackageName com.tts.practice.habitstracker : 0 : 1489650836866 : false : 0
+  --PackageName com.example.android.gles : 0 : 1489409365588 : false : 0
+  --PackageName com.maximko.cuber : 1 : 1489230814316 : false : 0
+  --PackageName vn.com.vng.zalopay : 1 : 1489166917902 : false : 0
+  --PackageName com.anydo : 0 : 1489613099941 : false : 0
+  --PackageName com.google.android.apps.translate : 1 : 1488275646235 : false : 0
+  --PackageName org.isoron.uhabits.old : 1 : 1489122308248 : false : 0
+  --PackageName com.zing.zalo.faceapp : 1 : 1488872701280 : false : 0
+  --PackageName com.packtpub.ndkmastering : 1 : 1489220551049 : false : 0
+  --PackageName kellinwood.zipsigner2 : 1 : 1489166917902 : false : 0
+  --PackageName pl.macaque.Missiles : 0 : 1489571696464 : false : 0
+  --PackageName com.google.android.apps.fireball : 9 : null : true : 0
+
+DUMP OF SERVICE meminfo:
+  Applications Memory Usage (kB):
+  Uptime: 229855565 Realtime: 525400929
+
+  ** MEMINFO in pid 30577 [com.zing.zalo] **
+                     Pss  Private  Private  Swapped     Heap     Heap     Heap
+                   Total    Dirty    Clean    Dirty     Size    Alloc     Free
+                  ------   ------   ------   ------   ------   ------   ------
+    Native Heap    12989    12888        0     1028        0        0        0
+    Dalvik Heap     8659     8596        0     2464        0        0        0
+   Dalvik Other      466      448        0        4                           
+          Stack      220      220        0        4                           
+      Other dev        5        0        4        0                           
+       .so mmap     2270      364      644     1228                           
+      .apk mmap      346        0      232        0                           
+      .ttf mmap       23        0        8        0                           
+      .dex mmap     4928        0     4928        0                           
+      code mmap     1062        0      140        0                           
+     image mmap     2035     1484       16      524                           
+     Other mmap       93        4       48        0                           
+        Unknown      132      132        0       56                           
+          TOTAL    33228    24136     6020     5308        0        0        0
+
+DUMP OF SERVICE procstats:
+  AGGREGATED OVER LAST 24 HOURS:
+  System memory usage:
+    SOff/Norm: 4 samples:
+      Cached: 212MB min, 253MB avg, 278MB max
+      Free: 18MB min, 22MB avg, 32MB max
+      ZRam: 0.00 min, 0.00 avg, 0.00 max
+      Kernel: 54MB min, 65MB avg, 87MB max
+      Native: 17MB min, 21MB avg, 25MB max
+    SOn /Norm: 4 samples:
+      Cached: 264MB min, 267MB avg, 270MB max
+      Free: 21MB min, 53MB avg, 72MB max
+      ZRam: 0.00 min, 0.00 avg, 0.00 max
+      Kernel: 56MB min, 66MB avg, 89MB max
+      Native: 20MB min, 22MB avg, 24MB max
+         Mod : 2 samples:
+      Cached: 149MB min, 202MB avg, 255MB max
+      Free: 17MB min, 26MB avg, 36MB max
+      ZRam: 0.00 min, 0.00 avg, 0.00 max
+      Kernel: 62MB min, 62MB avg, 63MB max
+      Native: 24MB min, 25MB avg, 25MB max
+         Low : 5 samples:
+      Cached: 135MB min, 140MB avg, 144MB max
+      Free: 23MB min, 38MB avg, 96MB max
+      ZRam: 0.00 min, 0.00 avg, 0.00 max
+      Kernel: 51MB min, 56MB avg, 58MB max
+      Native: 23MB min, 24MB avg, 25MB max
+
+  Per-Package Stats:
+    * com.zing.zalo / u0a176 / v12100189:
+        * com.zing.zalo / u0a176 / v12100189:
+                 TOTAL: 99% (4.3MB-50MB-138MB/2.9MB-46MB-133MB over 89)
+                   Top: 15% (39MB-77MB-138MB/35MB-72MB-133MB over 41)
+                Imp Fg: 0.00%
+               Service: 83% (4.3MB-27MB-77MB/2.9MB-25MB-71MB over 48)
+            Service Rs: 0.60%
+              Receiver: 0.00%
+        * com.zing.zalo.service.ZaloBackgroundService:
+          Process: com.zing.zalo
+              Running count 45 / time 99%
+              Started count 45 / time 99%
+            Executing count 36 / time 0.11%
+        * com.zing.zalo.service.SmsReceiverService:
+          Process: com.zing.zalo
+              Running count 43 / time 0.04%
+              Started count 22 / time 0.02%
+            Executing count 43 / time 0.04%
+        * com.zing.zalo.service.GCMIntentService:
+          Process: com.zing.zalo
+              Running count 126 / time 0.03%
+              Started count 63 / time 0.03%
+            Executing count 127 / time 0.00%
+        * com.zing.zalo.service.ZaloKeepAliveService:
+          Process: com.zing.zalo
+              Running count 40 / time 0.05%
+              Started count 20 / time 0.05%
+            Executing count 40 / time 0.05%
+
+  Summary:
+    * com.zing.zalo / u0a176 / v12100189:
+             TOTAL: 99% (4.3MB-50MB-138MB/2.9MB-46MB-133MB over 89)
+               Top: 15% (39MB-77MB-138MB/35MB-72MB-133MB over 41)
+            Imp Fg: 0.00%
+           Service: 83% (4.3MB-27MB-77MB/2.9MB-25MB-71MB over 48)
+        Service Rs: 0.60%
+          Receiver: 0.00%
+
+  Run time Stats:
+    SOff/Norm: +16m11s748ms
+         Mod : +9s296ms
+    SOn /Norm: +5h26m27s685ms
+         Mod : +1h22m31s326ms
+         Low : +1m40s574ms
+         Crit: +16s960ms
+        TOTAL: +7h7m17s589ms
+
+  Memory usage:
+    Kernel : 65MB (88 samples)
+    Native : 22MB (88 samples)
+    Persist: 121MB (759 samples)
+    Top    : 84MB (1467 samples)
+    ImpFg  : 56MB (2175 samples)
+    ImpBg  : 7.0MB (272 samples)
+    Service: 74MB (3029 samples)
+    Receivr: 271KB (2196 samples)
+    Home   : 8.4MB (328 samples)
+    LastAct: 6.8MB (732 samples)
+    CchAct : 3.2MB (136 samples)
+    CchCAct: 148KB (4 samples)
+    CchEmty: 91MB (2327 samples)
+    Cached : 256MB (88 samples)
+    Free   : 49MB (88 samples)
+    TOTAL  : 843MB
+    ServRst: 7.2MB (2133 samples)
+
+            Start time: 2017-03-15 15:39:00
+    Total elapsed time: +23h18m17s125ms (partial) libart.so
+
+  AGGREGATED OVER LAST 3 HOURS:
+  System memory usage:
+    SOff/Norm: 2 samples:
+      Cached: 261MB min, 261MB avg, 262MB max
+      Free: 18MB min, 19MB avg, 19MB max
+      ZRam: 0.00 min, 0.00 avg, 0.00 max
+      Kernel: 57MB min, 58MB avg, 60MB max
+      Native: 23MB min, 24MB avg, 25MB max
+    SOn /Norm: 1 samples:
+      Cached: 267MB min, 267MB avg, 267MB max
+      Free: 72MB min, 72MB avg, 72MB max
+      ZRam: 0.00 min, 0.00 avg, 0.00 max
+      Kernel: 57MB min, 57MB avg, 57MB max
+      Native: 21MB min, 21MB avg, 21MB max
+         Mod : 1 samples:
+      Cached: 255MB min, 255MB avg, 255MB max
+      Free: 17MB min, 17MB avg, 17MB max
+      ZRam: 0.00 min, 0.00 avg, 0.00 max
+      Kernel: 63MB min, 63MB avg, 63MB max
+      Native: 24MB min, 24MB avg, 24MB max
+
+  Per-Package Stats:
+    * com.zing.zalo / u0a176 / v12100189:
+        * com.zing.zalo / u0a176 / v12100189:
+                 TOTAL: 98% (4.3MB-33MB-90MB/2.9MB-30MB-85MB over 15)
+                   Top: 3.0% (71MB-80MB-90MB/66MB-76MB-85MB over 2)
+                Imp Fg: 0.02%
+               Service: 95% (4.3MB-26MB-33MB/2.9MB-24MB-30MB over 13)
+            Service Rs: 0.22%
+              Receiver: 0.01%
+        * com.zing.zalo.service.ZaloBackgroundService:
+          Process: com.zing.zalo
+              Running count 10 / time 98%
+              Started count 10 / time 98%
+            Executing count 6 / time 0.06%
+        * com.zing.zalo.service.SmsReceiverService:
+          Process: com.zing.zalo
+              Running count 15 / time 0.06%
+              Started count 8 / time 0.03%
+            Executing count 15 / time 0.05%
+        * com.zing.zalo.service.GCMIntentService:
+          Process: com.zing.zalo
+              Running count 2 / time 0.00%
+              Started count 1 / time 0.00%
+            Executing count 2 / time 0.00%
+        * com.zing.zalo.service.ZaloKeepAliveService:
+          Process: com.zing.zalo
+              Running count 8 / time 0.03%
+              Started count 4 / time 0.03%
+            Executing count 8 / time 0.03%
+
+  Summary:
+    * com.zing.zalo / u0a176 / v12100189:
+             TOTAL: 98% (4.3MB-33MB-90MB/2.9MB-30MB-85MB over 15)
+               Top: 3.0% (71MB-80MB-90MB/66MB-76MB-85MB over 2)
+            Imp Fg: 0.02%
+           Service: 95% (4.3MB-26MB-33MB/2.9MB-24MB-30MB over 13)
+        Service Rs: 0.22%
+          Receiver: 0.01%
+
+  Run time Stats:
+    SOff/Norm: +7m21s418ms
+         Mod : +9s296ms
+    SOn /Norm: +1h16m30s374ms
+         Mod : +11m22s837ms
+         Low : +3s226ms
+        TOTAL: +1h35m27s151ms
+
+  Memory usage:
+    Kernel : 59MB (32 samples)
+    Native : 23MB (32 samples)
+    Persist: 128MB (189 samples)
+    Top    : 46MB (303 samples)
+    ImpFg  : 57MB (514 samples)
+    ImpBg  : 14MB (85 samples)
+    Service: 90MB (717 samples)
+    Receivr: 357KB (475 samples)
+    Home   : 5.6MB (32 samples)
+    LastAct: 6.9MB (91 samples)
+    CchAct : 50KB (1 samples)
+    CchCAct: 664KB (4 samples)
+    CchEmty: 110MB (472 samples)
+    Cached : 261MB (32 samples)
+    Free   : 32MB (32 samples)
+    TOTAL  : 833MB
+    ServRst: 220KB (267 samples)
+
+            Start time: 2017-03-16 08:22:35
+    Total elapsed time: +6h34m41s408ms (partial) libart.so
+
+  CURRENT STATS:
+  System memory usage:
+    SOff/Norm: 1 samples:
+      Cached: 262MB min, 262MB avg, 262MB max
+      Free: 19MB min, 19MB avg, 19MB max
+      ZRam: 0.00 min, 0.00 avg, 0.00 max
+      Kernel: 57MB min, 57MB avg, 57MB max
+      Native: 25MB min, 25MB avg, 25MB max
+
+  Per-Package Stats:
+    * com.zing.zalo / u0a176 / v12100189:
+        * com.zing.zalo / u0a176 / v12100189:
+                 TOTAL: 100% (32MB-48MB-90MB/29MB-45MB-85MB over 6)
+                   Top: 7.9% (71MB-80MB-90MB/66MB-76MB-85MB over 2)
+               Service: 92% (32MB-32MB-32MB/29MB-30MB-30MB over 4)
+            Service Rs: 0.09%
+        * com.zing.zalo.service.ZaloBackgroundService:
+          Process: com.zing.zalo
+              Running count 5 / time 100%
+              Started count 5 / time 100%
+            Executing count 4 / time 0.09%
+        * com.zing.zalo.service.SmsReceiverService:
+          Process: com.zing.zalo
+              Running count 12 / time 0.03%
+              Started count 6 / time 0.01%
+            Executing count 12 / time 0.02%
+        * com.zing.zalo.service.ZaloKeepAliveService:
+          Process: com.zing.zalo
+              Running count 4 / time 0.04%
+              Started count 2 / time 0.04%
+            Executing count 4 / time 0.04%
+
+  Summary:
+    * com.zing.zalo / u0a176 / v12100189:
+             TOTAL: 100% (32MB-48MB-90MB/29MB-45MB-85MB over 6)
+               Top: 7.9% (71MB-80MB-90MB/66MB-76MB-85MB over 2)
+           Service: 92% (32MB-32MB-32MB/29MB-30MB-30MB over 4)
+        Service Rs: 0.09%
+
+  Run time Stats:
+    SOff/Norm: +6s977ms
+    SOn /Norm: +35m10s248ms (running)
+        TOTAL: +35m17s225ms
+
+  Memory usage:
+    Kernel : 57MB (8 samples)
+    Native : 25MB (8 samples)
+    Persist: 131MB (20 samples)
+    Top    : 30MB (48 samples)
+    ImpFg  : 67MB (70 samples)
+    ImpBg  : 9.9MB (8 samples)
+    Service: 97MB (95 samples)
+    Receivr: 57KB (50 samples)
+    Home   : 5.2MB (8 samples)
+    LastAct: 6.3MB (8 samples)
+    CchEmty: 100MB (70 samples)
+    Cached : 262MB (8 samples)
+    Free   : 19MB (8 samples)
+    TOTAL  : 810MB
+    ServRst: 278KB (55 samples)
+
+            Start time: 2017-03-16 14:22:00
+    Total elapsed time: +35m17s369ms (partial) libart.so
+
+DUMP OF SERVICE usagestats:
+
+DUMP OF SERVICE batterystats:
+  Discharge step durations:
+    #0: +12m42s922ms to 24 (power-save-off)
+    #1: +4m0s418ms to 25 (screen-on, power-save-off)
+    #2: +4m0s398ms to 26 (screen-on, power-save-off)
+    #3: +3m30s320ms to 27 (screen-on, power-save-off)
+    #4: +8m45s915ms to 28 (power-save-off)
+    #5: +15m18s162ms to 29 (power-save-off)
+    #6: +4m30s435ms to 30 (screen-on, power-save-off)
+    #7: +4m54s59ms to 31 (power-save-off)
+    #8: +33m16s403ms to 32 (power-save-off)
+    #9: +47m1s23ms to 33 (power-save-off)
+    #10: +55m0s11ms to 34 (power-save-off)
+    #11: +49m59s983ms to 35 (screen-off, power-save-off)
+    #12: +60m0s67ms to 36 (screen-off, power-save-off)
+    #13: +44m59s998ms to 37 (power-save-off)
+    #14: +35m49s31ms to 38 (power-save-off)
+    #15: +1h24m10s11ms to 39 (power-save-off)
+    #16: +17m7s264ms to 40 (power-save-off)
+    #17: +4m0s440ms to 41 (screen-on, power-save-off)
+    #18: +4m0s445ms to 42 (screen-on, power-save-off)
+    #19: +4m0s434ms to 43 (screen-on, power-save-off)
+    #20: +3m0s264ms to 44 (screen-on, power-save-off)
+    #21: +4m0s401ms to 45 (screen-on, power-save-off)
+    #22: +4m0s429ms to 46 (screen-on, power-save-off)
+    #23: +4m0s395ms to 47 (screen-on, power-save-off)
+    #24: +4m30s464ms to 48 (screen-on, power-save-off)
+    #25: +3m30s340ms to 49 (screen-on, power-save-off)
+    #26: +3m0s316ms to 50 (screen-on, power-save-off)
+    #27: +2m0s198ms to 51 (screen-on, power-save-off)
+    #28: +2m0s206ms to 52 (screen-on, power-save-off)
+    #29: +3m30s352ms to 53 (screen-on, power-save-off)
+    #30: +3m0s320ms to 54 (screen-on, power-save-off)
+    #31: +3m0s326ms to 55 (screen-on, power-save-off)
+    #32: +3m30s388ms to 56 (screen-on, power-save-off)
+    #33: +3m30s382ms to 57 (screen-on, power-save-off)
+    #34: +2m30s264ms to 58 (screen-on, power-save-off)
+    #35: +2m30s284ms to 59 (screen-on, power-save-off)
+    #36: +2m0s186ms to 60 (screen-on, power-save-off)
+    #37: +3m30s357ms to 61 (screen-on, power-save-off)
+    #38: +3m0s322ms to 62 (screen-on, power-save-off)
+    #39: +2m0s192ms to 63 (screen-on, power-save-off)
+    #40: +33m45s96ms to 64 (power-save-off)
+    #41: +44m57s988ms to 65 (screen-off, power-save-off)
+    #42: +48m1s998ms to 66 (screen-off, power-save-off)
+    #43: +52m0s11ms to 67 (screen-off, power-save-off)
+    #44: +54m59s928ms to 68 (screen-off, power-save-off)
+    #45: +45m0s152ms to 69 (screen-off, power-save-off)
+    #46: +2h25m29s255ms to 70 (power-save-off)
+    #47: +3m0s281ms to 71 (screen-on, power-save-off)
+    #48: +3m30s353ms to 72 (screen-on, power-save-off)
+    #49: +3m30s348ms to 73 (screen-on, power-save-off)
+    #50: +4m0s413ms to 74 (screen-on, power-save-off)
+    #51: +2m30s232ms to 75 (screen-on, power-save-off)
+    #52: +3m30s335ms to 76 (screen-on, power-save-off)
+    #53: +3m30s328ms to 77 (screen-on, power-save-off)
+    #54: +4m0s409ms to 78 (screen-on, power-save-off)
+    #55: +3m0s325ms to 79 (screen-on, power-save-off)
+    #56: +3m30s348ms to 80 (screen-on, power-save-off)
+    #57: +3m30s348ms to 81 (screen-on, power-save-off)
+    #58: +4m0s434ms to 82 (screen-on, power-save-off)
+    #59: +3m0s292ms to 83 (screen-on, power-save-off)
+    #60: +3m30s365ms to 84 (screen-on, power-save-off)
+    #61: +3m30s366ms to 85 (screen-on, power-save-off)
+    #62: +4m0s405ms to 86 (screen-on, power-save-off)
+    #63: +3m30s381ms to 87 (screen-on, power-save-off)
+    #64: +3m30s362ms to 88 (screen-on, power-save-off)
+    #65: +3m0s309ms to 89 (screen-on, power-save-off)
+    #66: +3m0s298ms to 90 (screen-on, power-save-off)
+    #67: +1m30s170ms to 91 (screen-on, power-save-off)
+    #68: +2m0s181ms to 92 (screen-on, power-save-off)
+    #69: +1m30s161ms to 93 (screen-on, power-save-off)
+    #70: +1m30s151ms to 94 (screen-on, power-save-off)
+    #71: +1m30s147ms to 95 (screen-on, power-save-off)
+    #72: +30m4s490ms to 96 (power-save-off)
+    #73: +14m14s629ms to 97 (power-save-off)
+    #74: +2m0s207ms to 98 (screen-on, power-save-off)
+
+  Charge step durations:
+    #0: +4m11s11ms to 39 (screen-on, power-save-off)
+    #1: +7m1s764ms to 38 (screen-on, power-save-off)
+    #2: +5m11s282ms to 37 (screen-on, power-save-off)
+    #3: +4m0s974ms to 36 (power-save-off)
+    #4: +3m50s925ms to 35 (screen-on, power-save-off)
+    #5: +3m10s763ms to 34 (screen-on, power-save-off)
+    #6: +3m50s922ms to 33 (screen-on, power-save-off)
+    #7: +2m50s683ms to 32 (screen-on, power-save-off)
+    #8: +2m50s686ms to 31 (screen-on, power-save-off)
+    #9: +3m40s885ms to 30 (screen-on, power-save-off)
+    #10: +3m20s809ms to 29 (screen-on, power-save-off)
+    #11: +3m30s852ms to 28 (screen-on, power-save-off)
+    #12: +3m10s781ms to 27 (screen-on, power-save-off)
+    #13: +5m31s334ms to 26 (screen-on, power-save-off)
+    Estimated charge time remaining: +4h4m59s536ms
+
+  Statistics since last charge:
+    System starts: 0, currently on battery: false
+    Time on battery: 19h 37m 59s 586ms (94.9%) realtime, 3h 27m 0s 24ms (16.7%) uptime
+    Time on battery screen off: 16h 22m 9s 505ms (79.1%) realtime, 11m 9s 947ms (0.9%) uptime
+    Total run time: 20h 41m 55s 146ms realtime, 4h 30m 55s 584ms uptime
+    Charge time remaining: 4h 4m 59s 536ms 
+    Start clock time: 2017-03-15-18-15-22
+    Screen on: 3h 15m 50s 81ms (16.6%) 20x, Interactive: 3h 15m 44s 92ms (16.6%)
+    Screen brightnesses:
+      dark 3h 11m 15s 146ms (97.7%)
+      medium 4m 34s 935ms (2.3%)
+    Total full wakelock time: 2h 21m 17s 581ms
+    Total partial wakelock time: 7m 38s 410ms
+    Mobile total received: 0B, sent: 0B (packets received 0, sent 0)
+    Phone signal levels:
+      none 19h 37m 59s 586ms (100.0%) 0x
+    Signal scanning time: 19h 37m 59s 586ms
+    Radio types:
+      none 19h 37m 59s 586ms (100.0%) 0x
+    Mobile radio active time: 0ms (0.0%) 0x
+    Wi-Fi total received: 1.12GB, sent: 39.92MB (packets received 903803, sent 491147)
+    Wifi on: 4h 5m 37s 701ms (20.9%), Wifi running: 4h 5m 34s 97ms (20.8%)
+    Wifi states: (no activity)
+    Wifi supplicant states:
+      disconn 15h 32m 56s 946ms (79.2%) 7x
+      scanning 54m 27s 342ms (4.6%) 6x
+      associating 571ms (0.0%) 6x
+      associated 30s 650ms (0.0%) 8x
+      4-way-handshake 684ms (0.0%) 8x
+      group-handshake 375ms (0.0%) 11x
+      completed 3h 10m 3s 18ms (16.1%) 12x
+    Wifi signal levels:
+      level(2) 1m 15s 244ms (0.1%) 10x
+      level(3) 7h 45m 57s 324ms (39.6%) 94x
+      level(4) 11h 50m 47s 18ms (60.3%) 85x
+    Bluetooth on: 0ms (0.0%)
+    Bluetooth states: (no activity)
+
+    Device battery use since last full charge
+      Amount discharged (lower bound): 75
+      Amount discharged (upper bound): 76
+      Amount discharged while screen on: 60
+      Amount discharged while screen off: 16
+
+    Estimated power use (mAh):
+      Capacity: 2600, Computed drain: 1237, actual drain: 1950-1976
+      Unaccounted: 713
+      Cell standby: 530
+      Screen: 351
+      Uid u0a72: 148
+      Uid 1000: 50.3
+      Uid 0: 39.0
+      Idle: 37.6
+      Uid 1013: 32.6
+      Wifi: 8.19
+      Uid u0a36: 7.86
+      Uid u0a1: 7.47
+      Uid u0a51: 6.19
+      Uid u0a25: 4.59
+      Uid u0a176: 3.43
+      Uid 1001: 2.76
+      Uid u0a117: 1.90
+      Phone calls: 1.11
+      Uid u0a44: 0.900
+      Uid u0a220: 0.816
+      Uid u0a204: 0.469
+      Uid u0a12: 0.413
+      Uid u0a3: 0.393
+      Uid u0a135: 0.375
+      Uid u0a254: 0.365
+      Uid u0a24: 0.333
+      Uid u0a49: 0.197
+      Uid u0a26: 0.188
+      Uid u0a54: 0.142
+      Uid u0a96: 0.134
+      Uid u0a11: 0.118
+      Uid u0a82: 0.0616
+      Uid u0a22: 0.0530
+      Uid u0a70: 0.0368
+      Uid u0a34: 0.0253
+      Uid u0a112: 0.0235
+      Uid u0a28: 0.0217
+      Uid 1006: 0.0175
+      Uid 1019: 0.0136
+      Uid u0a74: 0.0112
+      Uid 1101: 0.0107
+      Uid u0a9: 0.00940
+      Uid u0a47: 0.00940
+      Uid u0a30: 0.00836
+      Uid u0a13: 0.00809
+      Uid u0a61: 0.00809
+      Uid u0a92: 0.00757
+      Uid u0a91: 0.00679
+      Uid u0a23: 0.00653
+      Uid u0a31: 0.00627
+      Uid u0a33: 0.00627
+      Uid u0a17: 0.00522
+      Uid u0a55: 0.00522
+      Uid u0a95: 0.00522
+      Uid u0a48: 0.00131
+      Uid u0a99: 0.00131
+      Uid u0a0: 0.00104
+      Uid u0a60: 0.00104
+      Uid u0a8: 0.000783
+      Uid u0a78: 0.000783
+      Uid 1014: 0.00000050
+
+    1000:
+      Wi-Fi network: 5.61KB received, 9.45KB sent (packets 71 received, 99 sent)
+      User activity: 277 other, 63 button, 3353 touch
+      Wake lock PhoneWindowManager.mBroadcastWakeLock: 699ms partial (1 times) realtime
+      Wake lock SCREEN_FROZEN realtime
+      Wake lock SyncLoopWakeLock: 18ms partial (3 times) realtime
+      Wake lock ActivityManager-Launch realtime
+      Wake lock ConnectivityService: 3m 25s 355ms partial (4 times) realtime
+      Wake lock handleAudioEvent: 1s 9ms partial (1 times) realtime
+      Wake lock handleMediaEvent: 133ms partial (1 times) realtime
+      Wake lock GpsLocationProvider: 23ms partial (1 times) realtime
+      Wake lock DHCP: 821ms partial (1 times) realtime
+      Wake lock NetworkStats: 773ms partial (36 times) realtime
+      Wake lock VibratorService realtime
+      Wake lock wakeLock: 34ms partial (4 times) realtime
+      Wake lock SyncManagerHandleSyncAlarm: 32ms partial (3 times) realtime
+      Wake lock AudioMix realtime
+      Wake lock Earphone Inserted: 5s 2ms full (1 times) realtime
+      Wake lock *job*/android/com.android.server.os.BackgroundCompactionService: 138ms partial (27 times) realtime
+      Wake lock *alarm*: 52s 792ms partial (283 times) realtime
+      Wake lock WiredAccessoryManager: 6ms partial (1 times) realtime
+      Wake lock TimaService: 1s 181ms partial (2 times) realtime
+      Wake lock WifiSuspend: 1ms partial (2 times) realtime
+      Wake lock SmartManager Framework Message: 1s 94ms partial (16 times) realtime
+      Wake lock SmartManager Framework Thread: 11s 453ms partial (38 times) realtime
+      Wake lock ActivityManager-Sleep realtime
+      TOTAL wake: 5s 2ms full, 4m 35s 562ms partial realtime
+      Job android/com.android.server.os.BackgroundCompactionService: 1m 0s 976ms realtime (30 times)
+      Sensor 1600221811: 2h 5m 8s 459ms realtime (114 times)
+      Vibrator: 500ms realtime (1 times)
+      Foreground activities: 50s 185ms realtime (8 times)
+      Foreground for: 19h 37m 59s 586ms 
+      Proc com.sec.android.app.parser:
+        CPU: 70ms usr + 130ms krn ; 0ms fg
+        7 proc starts
+      Proc npsmobex:
+        CPU: 0ms usr + 120ms krn ; 0ms fg
+      Proc com.sec.android.Kies:
+        CPU: 0ms usr + 0ms krn ; 0ms fg
+        1 proc starts
+      Proc com.samsung.android.MtpApplication:
+        CPU: 10ms usr + 10ms krn ; 0ms fg
+        1 proc starts
+      Proc com.sec.android.emergencymode.service:
+        CPU: 4s 600ms usr + 4s 680ms krn ; 0ms fg
+      Proc com.samsung.android.securitylogagent:
+      CPU: 50ms usr + 0ms krn ; 0ms fg
+        10 proc starts
+      Proc system:
+        CPU: 6m 49s 240ms usr + 5m 32s 930ms krn ; 0ms fg
+      Proc com.sec.bcservice:
+        CPU: 80ms usr + 110ms krn ; 0ms fg
+        6 proc starts
+      Proc surfaceflinger:
+        CPU: 7m 59s 140ms usr + 9m 12s 690ms krn ; 0ms fg
+      Proc cs:
+        CPU: 0ms usr + 70ms krn ; 0ms fg
+      Proc com.sec.android.inputmethod:
+        CPU: 23s 270ms usr + 9s 490ms krn ; 0ms fg
+      Proc com.samsung.android.sm:
+        CPU: 710ms usr + 1s 570ms krn ; 0ms fg
+      Proc com.sec.android.diagmonagent:
+        CPU: 90ms usr + 30ms krn ; 0ms fg
+        13 proc starts
+      Proc com.sec.pcw.device:
+        CPU: 230ms usr + 80ms krn ; 0ms fg
+        13 proc starts
+      Proc wcnss_service:
+        CPU: 0ms usr + 40ms krn ; 0ms fg
+      Proc com.samsung.android.widgetapp.torch:
+        CPU: 320ms usr + 110ms krn ; 0ms fg
+        18 proc starts
+      Proc com.android.settings:
+        CPU: 7s 450ms usr + 3s 320ms krn ; 9s 880ms fg
+        26 proc starts
+      Proc mcDriverDaemon:
+        CPU: 0ms usr + 120ms krn ; 0ms fg
+      Proc com.policydm:
+        CPU: 1s 690ms usr + 410ms krn ; 0ms fg
+        13 proc starts
+      Proc servicemanager:
+        CPU: 30s 400ms usr + 46s 720ms krn ; 0ms fg
+      Proc imsqmidaemon:
+        CPU: 0ms usr + 70ms krn ; 0ms fg
+      Proc com.samsung.aasaservice:
+        CPU: 30ms usr + 150ms krn ; 0ms fg
+      Proc com.qualcomm.timeservice:
+        CPU: 10ms usr + 10ms krn ; 0ms fg
+        1 proc starts
+      Apk com.samsung.android.MtpApplication:
+        Service com.samsung.android.MtpApplication.MtpService:
+          Created for: 0ms uptime
+          Starts: 1, launches: 1
+      Apk android:
+        13 wakeup alarms
+        Service com.android.server.os.BackgroundCompactionService:
+          Created for: 0ms uptime
+          Starts: 0, launches: 30
+      Apk com.sec.android.inputmethod:
+        Service com.diotek.ime.framework.spellcheckservice.SamsungIMESpellCheckerService:
+          Created for: 0ms uptime
+          Starts: 0, launches: 113
+      Apk com.samsung.android.sm:
+        3 wakeup alarms
+        Service com.samsung.android.sm.common.appmanager.AppLockingNotiService:
+          Created for: 35ms uptime
+          Starts: 1, launches: 1
+        Service com.samsung.android.sm.common.storage.StorageCleanIntentService:
+          Created for: 12s 269ms uptime
+          Starts: 1, launches: 1
+        Service com.samsung.android.sm.contextagent.ReportService:
+          Created for: 458ms uptime
+          Starts: 1, launches: 1
+      Apk com.policydm:
+        Service com.policydm.XDMService:
+          Created for: 1s 690ms uptime
+          Starts: 13, launches: 13
+    u0a176:
+      Wi-Fi network: 6.71MB received, 214.29KB sent (packets 5336 received, 3486 sent)
+      Wake lock WindowManager: 23s 989ms full (1 times) realtime
+      Wake lock VibratorService realtime
+      Wake lock GCM_LIB realtime
+      Wake lock AudioMix realtime
+      Wake lock *alarm*: 112ms partial (21 times) realtime
+      Wake lock GOOGLE_C2DM realtime
+      TOTAL wake: 23s 989ms full, 112ms partial realtime
+      Sensor 0: 1s 822ms realtime (1 times)
+      Vibrator: 3s 900ms realtime (39 times)
+      Foreground activities: 8m 29s 417ms realtime (16 times)
+      Foreground for: 55m 46s 542ms 
+      Active for: 19h 37m 59s 586ms 
+      Proc com.zing.zalo:
+        CPU: 1m 44s 260ms usr + 27s 230ms krn ; 1m 8s 560ms fg
+        10 proc starts
+      Apk com.zing.zalo:
+        74 wakeup alarms
+        Service com.zing.zalo.service.ZaloKeepAliveService:
+          Created for: 7s 942ms uptime
+          Starts: 10, launches: 10
+        Service com.zing.zalo.service.SmsReceiverService:
+          Created for: 2s 617ms uptime
+          Starts: 6, launches: 6
+        Service com.zing.zalo.service.GCMIntentService:
+          Created for: 4s 879ms uptime
+          Starts: 31, launches: 31
+        Service com.zing.zalo.service.ZaloBackgroundService:
+          Created for: 11m 14s 855ms uptime
+          Starts: 1, launches: 2
+
