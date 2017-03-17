@@ -7,7 +7,10 @@ import java.io.File;
  * Created by tts on 3/16/17.
  */
 public class MainWindowHelper {
-    private static JFileChooser fileChooser = new JFileChooser(System.getProperty("user.home"));
+//    private static JFileChooser fileChooser = new JFileChooser(System.getProperty("user.home"));
+
+    //TODO DEBUG
+    private static JFileChooser fileChooser = new JFileChooser("/home/tts/Projects/IntelliJIdea/SecureFileSharing/test");
 
     public static String openFileChooser(JComponent parent) {
         int result = fileChooser.showOpenDialog(parent);

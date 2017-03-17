@@ -26,7 +26,7 @@ public class MainWindow extends JFrame{
     private JRadioButton decryptRadioButton;
     private JRadioButton encryptRadioButton;
     private JComboBox algorithmComboBox;
-    private JProgressBar progressBar_status;
+    private JProgressBar progressBarStatus;
     private JFormattedTextField txt_input_path;
     private JFormattedTextField txt_key_path;
     private JButton btn_start;
@@ -80,20 +80,9 @@ public class MainWindow extends JFrame{
                         actionType = ActionType.DECRYPT;
                     }
 
-                    MainWindowController.performAction(algorithm, actionType, inputPath, keyPath, outputPath);
+                    MainWindowController.performAction(algorithm, actionType, progressBarStatus, inputPath, keyPath, outputPath);
                     break;
             }
-        }
-    }
-
-    private class Task extends SwingWorker<Void, Void> {
-
-        @Override
-        protected Void doInBackground() throws Exception {
-            int progress = 0;
-            // Initialize progress property.
-            setProgress(0);
-            return null;
         }
     }
 

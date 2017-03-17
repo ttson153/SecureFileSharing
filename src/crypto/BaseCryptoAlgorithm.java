@@ -1,6 +1,7 @@
 package crypto;
 
 import javax.crypto.Cipher;
+import javax.swing.*;
 
 /**
  * Created by tts on 3/16/17.
@@ -8,7 +9,7 @@ import javax.crypto.Cipher;
 public abstract class BaseCryptoAlgorithm {
     Cipher cipher;
 
-    public abstract void doAction(ActionType actionType, String inPath, String keyPath, String outPath, Object... otherConfiguration);
+    public abstract void doAction(ActionType actionType, String inPath, String keyPath, String outPath, JProgressBar progressBar, Object... otherConfiguration);
     protected abstract byte[] encrypt(byte[] in, byte[] key, byte[] out, Object... otherConfiguration);
-    protected abstract void decrypt(String inPath, String keyPath, String outPath, Object... otherConfiguration);
+    protected abstract byte[] decrypt(byte[] in, byte[] key, byte[] out, Object... otherConfiguration);
 }

@@ -3,6 +3,8 @@ package ui;
 import crypto.AES;
 import crypto.ActionType;
 
+import javax.swing.*;
+
 /**
  * Created by tts on 3/16/17.
  */
@@ -14,7 +16,7 @@ public class MainWindowController {
      * @param configuration Pass in the configuration in the specific other.
      *                      If algorithm is AES: inputPath, keyPath, outputPath
      */
-    public static void performAction(String algorithm, ActionType actionType, Object... configuration) {
+    public static void performAction(String algorithm, ActionType actionType, JProgressBar progressBar, Object... configuration) {
         switch (algorithm) {
             case "AES":
                 // parse configuration passed in
@@ -23,7 +25,7 @@ public class MainWindowController {
                 String keyPath = configuration[1].toString();
                 String outputPath = configuration[2].toString();
 
-                aesInstance.doAction(actionType, inputPath, keyPath, outputPath);
+                aesInstance.doAction(actionType, inputPath, keyPath, outputPath, progressBar);
                 break;
         }
     }
