@@ -16,16 +16,19 @@ public class MainWindowController {
      * @param configuration Pass in the configuration in the specific other.
      *                      If algorithm is AES: inputPath, keyPath, outputPath
      */
-    public static void performAction(String algorithm, ActionType actionType, JProgressBar progressBar, Object... configuration) {
+    public static void performAction(String algorithm, ActionType actionType,
+                                     JTextArea fileInfoArea, JProgressBar fileProgressBar, JProgressBar overallProgressBar,
+                                     Object... configuration) {
         switch (algorithm) {
             case "AES":
                 // parse configuration passed in
-                AES aesInstance = new AES();
                 String inputPath = configuration[0].toString();
                 String keyPath = configuration[1].toString();
                 String outputPath = configuration[2].toString();
 
-                aesInstance.doAction(actionType, inputPath, keyPath, outputPath, progressBar);
+                AES aesInstance = new AES(keyPath, keyPath);
+                aesInstance.setUIElements(fileInfoArea, fileProgressBar, overallProgressBar);
+                aesInstance.doAction(actionType, inputPath, outputPath);
                 break;
         }
     }

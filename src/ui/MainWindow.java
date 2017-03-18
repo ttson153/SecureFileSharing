@@ -82,7 +82,9 @@ public class MainWindow extends JFrame{
                         actionType = ActionType.DECRYPT;
                     }
 
-                    MainWindowController.performAction(algorithm, actionType, fileProgressBar, inputPath, keyPath, outputPath);
+                    MainWindowController.performAction(algorithm, actionType,
+                            txtFileInfo, fileProgressBar, overallProgressBar,
+                            inputPath, keyPath, outputPath);
                     break;
             }
         }
