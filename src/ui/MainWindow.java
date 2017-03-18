@@ -26,7 +26,7 @@ public class MainWindow extends JFrame{
     private JRadioButton decryptRadioButton;
     private JRadioButton encryptRadioButton;
     private JComboBox algorithmComboBox;
-    private JProgressBar progressBarStatus;
+    private JProgressBar fileProgressBar;
     private JFormattedTextField txt_input_path;
     private JFormattedTextField txt_key_path;
     private JButton btn_start;
@@ -34,6 +34,8 @@ public class MainWindow extends JFrame{
     private JButton btn_browse_key;
     private JFormattedTextField txt_output_path;
     private JButton btn_browse_output;
+    private JProgressBar overallProgressBar;
+    private JTextArea txtFileInfo;
 
     private class ButtonListener implements ActionListener {
 
@@ -80,7 +82,7 @@ public class MainWindow extends JFrame{
                         actionType = ActionType.DECRYPT;
                     }
 
-                    MainWindowController.performAction(algorithm, actionType, progressBarStatus, inputPath, keyPath, outputPath);
+                    MainWindowController.performAction(algorithm, actionType, fileProgressBar, inputPath, keyPath, outputPath);
                     break;
             }
         }

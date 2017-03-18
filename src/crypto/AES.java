@@ -51,38 +51,49 @@ public class AES extends BaseCryptoAlgorithm {
         @Override
         protected Void doInBackground() throws Exception {
             float progress = 0;
-            float progressDelta = (float) input.length / PROCESS_SIZE;
             setProgress((int) progress);
+            float progressDelta = (float) input.length / PROCESS_SIZE;
 
+            int processBlockLength = 0;
+            switch (actionType) {
+                case ENCRYPT:
+                    processBlockLength = PROCESS_SIZE;
+                    break;
+                case DECRYPT:
+                    processBlockLength = PROCESS_SIZE + 16;
+                    break;
+            }
+
+            int numProcess = input.length / processBlockLength;
             int currentOffset = 0;
-            while (progress < 100) {
+            while (numProcess >= 0) {
                 switch (actionType) {
                     case ENCRYPT:
-                        if (currentOffset + PROCESS_SIZE > input.length) {
+                        if (numProcess == 0) {
                             // last PROCESS_SIZE
                             output = encrypt(Arrays.copyOfRange(input, currentOffset, input.length),
                                     key, output);
                         } else {
-                            output = encrypt(Arrays.copyOfRange(input, currentOffset, currentOffset + PROCESS_SIZE),
+                            output = encrypt(Arrays.copyOfRange(input, currentOffset, currentOffset + processBlockLength),
                                     key, output);
-                            currentOffset += PROCESS_SIZE;
                         }
                         break;
                     case DECRYPT:
                         // TODO Hacky: there's an extra 16 byte block every PROCESS_SIZE
-                        if (currentOffset + PROCESS_SIZE > input.length) {
+                        if (numProcess == 0) {
                             // last PROCESS_SIZE
                             output = decrypt(Arrays.copyOfRange(input, currentOffset, input.length),
                                     key, output);
                         } else {
-                            output = decrypt(Arrays.copyOfRange(input, currentOffset, currentOffset + PROCESS_SIZE + 16),
+                            output = decrypt(Arrays.copyOfRange(input, currentOffset, currentOffset + processBlockLength),
                                     key, output);
-                            currentOffset += (PROCESS_SIZE + 16);
                         }
                         break;
                 }
                 FileUtils.appendBinary(output, outPath);
 
+                currentOffset += processBlockLength;
+                numProcess--;
                 progress += 100.0 / progressDelta;
                 System.out.println(progress + " %");
                 setProgress((int) Math.min(progress, 100));

@@ -13,6 +13,7 @@ public class MainWindowHelper {
     private static JFileChooser fileChooser = new JFileChooser("/home/tts/Projects/IntelliJIdea/SecureFileSharing/test");
 
     public static String openFileChooser(JComponent parent) {
+        fileChooser.setFileSelectionMode(JFileChooser.FILES_AND_DIRECTORIES);
         int result = fileChooser.showOpenDialog(parent);
         if (result == JFileChooser.APPROVE_OPTION) {
             File selectedFile = fileChooser.getSelectedFile();

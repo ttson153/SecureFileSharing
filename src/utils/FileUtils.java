@@ -33,4 +33,8 @@ public class FileUtils {
         output.write(toAppend);
         output.close();
     }
+
+    public static boolean isDirectory(String path) {
+        return Files.isDirectory(Paths.get(path));
+    }
 }
