@@ -37,6 +37,10 @@ public class FileUtils {
         output.close();
     }
 
+    public static void writeString(String toWrite, String path) throws IOException {
+        Files.write(Paths.get(path), toWrite.getBytes("utf-8"), StandardOpenOption.CREATE, StandardOpenOption.WRITE);
+    }
+
     public static boolean isDirectory(String path) {
         return Files.isDirectory(Paths.get(path));
     }
