@@ -49,13 +49,20 @@ public class AES extends BaseCryptoAlgorithm {
         public Task(ActionType actionType, String inPath, String outPath) {
             this.actionType = actionType;
             this.fileNames = new ArrayList<>();
-            try {
-                FileUtils.listAllSubFiles(fileNames, Paths.get(inPath), Paths.get(inPath).toString());
+            if (FileUtils.isDirectory(inPath)) {
+                // list all files if inPath is a directory
+                try {
+                    FileUtils.listAllSubFiles(fileNames, Paths.get(inPath), Paths.get(inPath).toString());
+                } catch (IOException e) {
+                    e.printStackTrace();
+                }
+                this.inPath = inPath;
+            } else {
+                // add only the file it inPath is a file
+                String fileName = Paths.get(inPath).getFileName().toString();
+                fileNames.add(fileName);
+                this.inPath = inPath.replace(fileName, "");
             }
-            catch (IOException e) {
-                e.printStackTrace();
-            }
-            this.inPath = inPath;
             this.outPath = outPath;
 
             fileProgressBar.setVisible(true);
@@ -67,6 +74,7 @@ public class AES extends BaseCryptoAlgorithm {
 
             // listener to update progressbars
             addPropertyChangeListener(evt -> {
+                //TODO how to update overall progressbar
                 if ("progress".equals(evt.getPropertyName())) {
                     fileProgressBar.setValue((Integer) evt.getNewValue());
                 }
