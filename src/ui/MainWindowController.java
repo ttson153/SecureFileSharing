@@ -27,9 +27,9 @@ public class MainWindowController {
                 String keyPath = configuration[1].toString();
                 String outputPath = configuration[2].toString();
 
-                AES aesInstance = new AES(keyPath, keyPath);
+                AES aesInstance = new AES(keyPath, keyPath, actionType);
                 aesInstance.setUIElements(fileInfoArea, fileProgressBar, overallProgressBar);
-                aesInstance.doAction(actionType, inputPath, outputPath);
+                aesInstance.doAction(inputPath, outputPath);
                 break;
         }
     }

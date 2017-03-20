@@ -5,6 +5,7 @@ import crypto.ActionType;
 import javax.swing.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
+import java.io.File;
 
 /**
  * Created by tts on 3/12/17.
@@ -79,11 +80,7 @@ public class MainWindow extends JFrame{
                         txt_input_path.setText(inputPath);
 
                         // set default output path
-                        if (decryptRadioButton.isSelected()) {
-                            txt_output_path.setText(inputPath + ".decrypted");
-                        } else {
-                            txt_output_path.setText(inputPath + ".encrypted");
-                        }
+                        txt_output_path.setText(inputPath.substring(0, inputPath.lastIndexOf(File.separator) + 1));
                         pack();
                     }
                     break;
@@ -96,7 +93,7 @@ public class MainWindow extends JFrame{
                 case BROWSE_OUTPUT_COMMAND:
                     outputPath = MainWindowHelper.openFileChooser(cryptoPanel);
                     if (outputPath != null) {
-                        txt_output_path.setText(outputPath);
+                        txt_output_path.setText(outputPath + File.separator);
                     }
                     break;
 

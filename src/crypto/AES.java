@@ -21,19 +21,31 @@ public class AES extends BaseCryptoAlgorithm {
     private static final int PROCESS_SIZE = 100 * BLOCK_SIZE; // Update every 100 block
     SecretKeySpec secretKeySpec;
     IvParameterSpec ivParameterSpec;
+    ActionType actionType;
 
     private JTextArea fileInfoArea;
     private JProgressBar fileProgressBar;
     private JProgressBar overallProgressBar;
 
-    public AES(String keyPath, String ivPath) {
+    public AES(String keyPath, String ivPath, ActionType actionType) {
         try {
             byte[] key = FileUtils.readBinary(keyPath);
             byte[] iv  = FileUtils.readBinary(ivPath);
             secretKeySpec = new SecretKeySpec(key, "AES");
             ivParameterSpec = new IvParameterSpec(iv);
+            this.actionType = actionType;
 
-        } catch (IOException e) {
+            cipher = Cipher.getInstance("AES/CBC/PKCS5PADDING");
+            switch (actionType) {
+                case ENCRYPT:
+                    cipher.init(Cipher.ENCRYPT_MODE, secretKeySpec, ivParameterSpec);
+                    break;
+                case DECRYPT:
+                    cipher.init(Cipher.DECRYPT_MODE, secretKeySpec, ivParameterSpec);
+                    break;
+            }
+
+        } catch (Exception e) {
             e.printStackTrace();
         }
     }
@@ -98,14 +110,14 @@ public class AES extends BaseCryptoAlgorithm {
                 setProgress((int) progress);
                 float progressDelta = (float) input.length / PROCESS_SIZE;
 
-                int processBlockLength = 0;
+                int processBlockLength = PROCESS_SIZE;
                 switch (actionType) {
                     case ENCRYPT:
-                        processBlockLength = PROCESS_SIZE;
+//                        processBlockLength = PROCESS_SIZE;
                         indivPath = outPath + fileName + ".encryted";
                         break;
                     case DECRYPT:
-                        processBlockLength = PROCESS_SIZE + 16;
+//                        processBlockLength = PROCESS_SIZE + 16;
                         indivPath = outPath + fileName + ".decryted";
                         break;
                 }
@@ -113,28 +125,14 @@ public class AES extends BaseCryptoAlgorithm {
                 int numProcess = input.length / processBlockLength;
                 int currentOffset = 0;
                 while (numProcess >= 0) {
-                    switch (actionType) {
-                        case ENCRYPT:
-                            if (numProcess == 0) {
-                                // last PROCESS_SIZE block
-                                output = encrypt(Arrays.copyOfRange(input, currentOffset, input.length)
-                                );
-                            } else {
-                                output = encrypt(Arrays.copyOfRange(input, currentOffset, currentOffset + processBlockLength)
-                                );
-                            }
-                            break;
-                        case DECRYPT:
-                            // TODO Hacky: there's an extra 16 byte block every PROCESS_SIZE
-                            if (numProcess == 0) {
-                                // last PROCESS_SIZE block
-                                output = decrypt(Arrays.copyOfRange(input, currentOffset, input.length)
-                                );
-                            } else {
-                                output = decrypt(Arrays.copyOfRange(input, currentOffset, currentOffset + processBlockLength)
-                                );
-                            }
-                            break;
+                    // TODO Hacky: there's an extra 16 byte block every PROCESS_SIZE
+                    if (numProcess == 0) {
+                        // last PROCESS_SIZE block
+                        output = action(Arrays.copyOfRange(input, currentOffset, input.length), true
+                        );
+                    } else {
+                        output = action(Arrays.copyOfRange(input, currentOffset, currentOffset + processBlockLength), false
+                        );
                     }
                     FileUtils.appendBinary(output, indivPath);
 
@@ -173,33 +171,20 @@ public class AES extends BaseCryptoAlgorithm {
     }
 
     @Override
-    public void doAction(ActionType actionType, String inPath, String outPath, Object... otherConfiguration) {
+    public void doAction(String inPath, String outPath, Object... otherConfiguration) {
         Task cryptoTask = new Task(actionType, inPath, outPath);
         cryptoTask.execute();
     }
 
     @Override
-    protected byte[] encrypt(byte[] in, Object... otherConfiguration) {
+    protected byte[] action(byte[] in, boolean isLastBlock) {
         try {
-            cipher = Cipher.getInstance("AES/CBC/PKCS5PADDING");
-            cipher.init(Cipher.ENCRYPT_MODE, secretKeySpec, ivParameterSpec);
-
             //TODO use doFinal(in, currentOffset, currentOffset + PROCESS_SIZE) - reduce array copy complexity
-            return cipher.doFinal(in);
-
-        } catch (Exception e) {
-            e.printStackTrace();
-            return null;
-        }
-    }
-
-    @Override
-    protected byte[] decrypt(byte[] in, Object... otherConfiguration) {
-        try {
-            cipher = Cipher.getInstance("AES/CBC/PKCS5PADDING");
-            cipher.init(Cipher.DECRYPT_MODE, secretKeySpec, ivParameterSpec);
-
-            return cipher.doFinal(in);
+            if (isLastBlock) {
+                return cipher.doFinal(in);
+            } else {
+                return cipher.update(in);
+            }
 
         } catch (Exception e) {
             e.printStackTrace();
