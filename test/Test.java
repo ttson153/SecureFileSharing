@@ -1,7 +1,9 @@
 import javax.crypto.Cipher;
 import javax.crypto.spec.SecretKeySpec;
+import javax.swing.*;
 import javax.swing.filechooser.FileFilter;
 import javax.swing.filechooser.FileNameExtensionFilter;
+import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.beans.PropertyChangeEvent;
