@@ -1,5 +1,6 @@
 package ui;
 
+import Connection.Client;
 import crypto.ActionType;
 
 import javax.swing.*;
@@ -21,6 +22,8 @@ public class MainWindow extends JFrame{
     private static final String START_HASH_COMMAND = "Start Hash";
     private static final String SAVE_HASH_COMMAND = "Save Hash";
     private static final String START_CHECKSUM_COMMAND = "Start Checksum";
+    private static final String INIT_CONNECTION = "Init Connection";
+    private static final String SEND_REQUEST = "Send Request";
 
     private static final String[] cryptoAlgorithms = {
             "-- Choose algorithms --",
@@ -64,6 +67,27 @@ public class MainWindow extends JFrame{
     private JButton btn_save_hash_to_file;
     private JButton btn_checksum;
     private JComboBox hash_method_combo_box;
+    private JLabel txtStatus;
+    private JButton btn_request;
+    private JTextArea txtMessage;
+    private JFormattedTextField txtDestIP;
+    private JFormattedTextField txtDestPort;
+    private JFormattedTextField txtLocalPort;
+    private JButton btn_init;
+    private JTextField txt_key;
+    private Client MyConnection = null;
+    private MainWindow window = this;
+
+
+    public void set_status(String status){
+        txtStatus.setText(status);
+    }
+
+    public void set_message(String status){
+        txtMessage.setText(status);
+    }
+
+    public String get_key(){ return txt_key.getText(); }
 
     private class ButtonListener implements ActionListener {
 
@@ -171,6 +195,15 @@ public class MainWindow extends JFrame{
                     }
 
                     break;
+
+                case INIT_CONNECTION:
+                    MyConnection = new Client(window, Integer.parseInt(txtLocalPort.getText()));
+                    break;
+                case SEND_REQUEST:
+                    Integer destination_port = Integer.parseInt(txtDestPort.getText());
+                    String destination_ip = txtDestIP.getText();
+                    MyConnection.request_connect(destination_port, destination_ip);
+                    break;
             }
         }
     }
@@ -207,6 +240,12 @@ public class MainWindow extends JFrame{
 
         btn_checksum.setActionCommand(START_CHECKSUM_COMMAND);
         btn_checksum.addActionListener(buttonListener);
+
+        btn_init.setActionCommand(INIT_CONNECTION);
+        btn_init.addActionListener(buttonListener);
+
+        btn_request.setActionCommand(SEND_REQUEST);
+        btn_request.addActionListener(buttonListener);
 
         // POPULATE COMBOBOX
         crypto_method_combo_box.setModel(new DefaultComboBoxModel(cryptoAlgorithms));
