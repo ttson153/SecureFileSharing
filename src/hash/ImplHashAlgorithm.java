@@ -11,13 +11,13 @@ import java.security.NoSuchAlgorithmException;
 /**
  * Created by tts on 3/19/17.
  */
-public class MD5 extends BaseHashAlgorithm {
+public class ImplHashAlgorithm extends BaseHashAlgorithm {
     JPanel checkSumPanel;
     JFormattedTextField hashOutputText;
 
-    public MD5() {
+    public ImplHashAlgorithm(String algorithm) {
         try {
-            md = MessageDigest.getInstance("MD5");
+            md = MessageDigest.getInstance(algorithm);
         } catch (NoSuchAlgorithmException e) {
             e.printStackTrace();
         }
@@ -31,6 +31,7 @@ public class MD5 extends BaseHashAlgorithm {
     @Override
     public void doAction(String inputPath, boolean saveToFile) {
         try {
+            System.gc();
             byte[] input = FileUtils.readBinary(inputPath);
             byte[] output = digest(input);
             hashOutputText.setText(StringUtils.toHexString(output));
@@ -40,9 +41,9 @@ public class MD5 extends BaseHashAlgorithm {
     }
 
     @Override
-    public void saveToFile(String inputHashPath) {
+    public void saveToFile(String inputHashPath, String algorithm) {
         String inputParts[] = inputHashPath.split("\\.");
-        String outputPath = inputParts[0] + "[MD5]." + inputParts[1];
+        String outputPath = inputParts[0] + "[" + algorithm + "]." + inputParts[1];
         if (hashOutputText.getText().equals("")) {
             // perform hash if not already
             doAction(inputHashPath, false);

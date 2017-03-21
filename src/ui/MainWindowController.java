@@ -2,7 +2,7 @@ package ui;
 
 import crypto.AES;
 import crypto.ActionType;
-import hash.MD5;
+import hash.ImplHashAlgorithm;
 
 import javax.swing.*;
 
@@ -11,9 +11,11 @@ import javax.swing.*;
  */
 public class MainWindowController {
 
-    /** Bridge between UI and application logic
-     * @param algorithm The crypto algorithm to use
-     * @param actionType The action to perform (ENCRYPT or DECRYPT)
+    /**
+     * Bridge between UI and application logic
+     *
+     * @param algorithm     The crypto algorithm to use
+     * @param actionType    The action to perform (ENCRYPT or DECRYPT)
      * @param configuration Pass in the configuration in the specific other.
      *                      If algorithm is AES: inputPath, keyPath, outputPath
      */
@@ -37,43 +39,29 @@ public class MainWindowController {
     public static void performHash(String algorithm,
                                    JFormattedTextField hashOutputText,
                                    Object... configuration) {
-        switch (algorithm) {
-            case "MD5":
-                // parse configuration passed in
-                String inputHashPath = configuration[0].toString();
-
-                MD5 md5Instance = new MD5();
-                md5Instance.setUIElements(hashOutputText, null);
-                md5Instance.doAction(inputHashPath, false);
-                break;
-        }
+        // parse configuration passed in
+        String inputHashPath = configuration[0].toString();
+        ImplHashAlgorithm hashAlgorithmInstance = new ImplHashAlgorithm(algorithm);
+        hashAlgorithmInstance.setUIElements(hashOutputText, null);
+        hashAlgorithmInstance.doAction(inputHashPath, false);
     }
 
     public static void performSaveHash(String algorithm,
                                        JFormattedTextField hashOutputText,
                                        Object... configuration) {
-        switch (algorithm) {
-            case "MD5":
-                // parse configuration passed in
-                String inputHashPath = configuration[0].toString();
-
-                MD5 md5Instance = new MD5();
-                md5Instance.setUIElements(hashOutputText, null);
-                md5Instance.saveToFile(inputHashPath);
-                break;
-        }
+        // parse configuration passed in
+        String inputHashPath = configuration[0].toString();
+        ImplHashAlgorithm hashAlgorithmInstance = new ImplHashAlgorithm(algorithm);
+        hashAlgorithmInstance.setUIElements(hashOutputText, null);
+        hashAlgorithmInstance.saveToFile(inputHashPath, algorithm);
     }
 
     public static void performChecksum(String algorithm,
                                        JFormattedTextField hashOutputText,
                                        JPanel checkSumPanel,
                                        String inputHashPath, String checksum, boolean isPath) {
-        switch (algorithm) {
-            case "MD5":
-                MD5 md5Instance = new MD5();
-                md5Instance.setUIElements(hashOutputText, checkSumPanel);
-                md5Instance.checksum(inputHashPath, checksum, isPath);
-                break;
-        }
+        ImplHashAlgorithm hashAlgorithmInstance = new ImplHashAlgorithm(algorithm);
+        hashAlgorithmInstance.setUIElements(hashOutputText, checkSumPanel);
+        hashAlgorithmInstance.checksum(inputHashPath, checksum, isPath);
     }
 }

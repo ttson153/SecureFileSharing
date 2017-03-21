@@ -103,6 +103,7 @@ public class AES extends BaseCryptoAlgorithm {
                 // Update UI
                 publish(fileName);
 
+                System.gc();
                 byte[] input = FileUtils.readBinary(inPath + fileName);
                 String indivPath = "";
 

@@ -17,7 +17,7 @@ public abstract class BaseHashAlgorithm {
     }
 
     public abstract void doAction(String inputPath, boolean saveToFile);
-    public abstract void saveToFile(String inputPath);
+    public abstract void saveToFile(String inputPath, String algorithm);
 
     protected abstract byte[] digest(byte[] input);
 }
