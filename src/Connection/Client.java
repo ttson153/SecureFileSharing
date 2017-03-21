@@ -17,8 +17,10 @@ import java.security.PrivateKey;
 import java.security.PublicKey;
 import java.util.Base64;
 
+import javax.crypto.SecretKey;
 import javax.swing.text.html.HTMLDocument.HTMLReader.IsindexAction;
 
+import crypto.AES;
 import crypto.RSA;
 import ui.MainWindow;
 
@@ -33,15 +35,19 @@ public class Client {
     private Thread thread_server;
     private MainWindow window;
     private KeyPair mykey = null;
+    private SecretKey exchangeKey = null;
 
     public Client(MainWindow window, Integer local_port){
         this.window = window;
         this.local_port = local_port;
         this.isServer = true;
+        this.exchangeKey = AES.randomKey();
+        window.set_key(AES.saveSecretKey(exchangeKey));
         server = new Server(window, local_port);
         try {
             mykey = RSA.generateKeyPair();
         }
+
         catch (Exception e1) {
             // TODO Auto-generated catch block
             e1.printStackTrace();

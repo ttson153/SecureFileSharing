@@ -3,6 +3,8 @@ package crypto;
 import utils.FileUtils;
 
 import javax.crypto.Cipher;
+import javax.crypto.KeyGenerator;
+import javax.crypto.SecretKey;
 import javax.crypto.spec.IvParameterSpec;
 import javax.crypto.spec.SecretKeySpec;
 import javax.swing.*;
@@ -11,6 +13,7 @@ import java.io.IOException;
 import java.nio.file.Paths;
 import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.Base64;
 import java.util.List;
 
 /**
@@ -187,6 +190,32 @@ public class AES extends BaseCryptoAlgorithm {
                 return cipher.update(in);
             }
 
+        } catch (Exception e) {
+            e.printStackTrace();
+            return null;
+        }
+    }
+
+    public static String saveSecretKey(SecretKey secret) {
+        // get base64 encoded version of the key
+        String encodedKey = Base64.getEncoder().encodeToString(secret.getEncoded());
+        return encodedKey;
+    }
+
+    public static SecretKey loadSecretKey(String encodedKey) {
+        // decode the base64 encoded string
+        byte[] decodedKey = Base64.getDecoder().decode(encodedKey);
+        // rebuild key using SecretKeySpec
+        SecretKey originalKey = new SecretKeySpec(decodedKey, 0, decodedKey.length, "AES");
+        return originalKey;
+    }
+
+    public static SecretKey randomKey(){
+        try {
+            KeyGenerator keyGen = KeyGenerator.getInstance("AES");
+            keyGen.init(256); // for example
+            SecretKey secretKey = keyGen.generateKey();
+            return secretKey;
         } catch (Exception e) {
             e.printStackTrace();
             return null;

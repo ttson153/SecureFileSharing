@@ -89,6 +89,9 @@ public class MainWindow extends JFrame{
 
     public String get_key(){ return txt_key.getText(); }
 
+    public void set_key(String key){ txt_key.setText(key); }
+
+
     private class ButtonListener implements ActionListener {
 
         @Override
