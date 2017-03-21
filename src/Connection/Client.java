@@ -3,26 +3,15 @@ package Connection;
 /**
  * Created by D.luffy on 3/21/2017.
  */
-import java.io.BufferedReader;
-import java.io.DataInputStream;
-import java.io.DataOutputStream;
-import java.io.IOException;
-import java.io.InputStream;
-import java.io.OutputStream;
-import java.net.ServerSocket;
-import java.net.Socket;
-import java.net.SocketTimeoutException;
-import java.security.KeyPair;
-import java.security.PrivateKey;
-import java.security.PublicKey;
-import java.util.Base64;
+
+import crypto.RSA;
+import crypto.SymmetricCrypto;
+import ui.MainWindow;
 
 import javax.crypto.SecretKey;
-import javax.swing.text.html.HTMLDocument.HTMLReader.IsindexAction;
-
-import crypto.AES;
-import crypto.RSA;
-import ui.MainWindow;
+import java.io.*;
+import java.net.Socket;
+import java.security.KeyPair;
 
 public class Client {
     private Integer local_port;
@@ -41,8 +30,8 @@ public class Client {
         this.window = window;
         this.local_port = local_port;
         this.isServer = true;
-        this.exchangeKey = AES.randomKey();
-        window.set_key(AES.saveSecretKey(exchangeKey));
+        this.exchangeKey = SymmetricCrypto.randomKey();
+        window.set_key(SymmetricCrypto.saveSecretKey(exchangeKey));
         server = new Server(window, local_port);
         try {
             mykey = RSA.generateKeyPair();

@@ -19,9 +19,9 @@ import java.util.List;
 /**
  * Created by tts on 3/16/17.
  */
-public class AES extends BaseCryptoAlgorithm {
-    private static final int BLOCK_SIZE = 16;  // 128 bits
-    private static final int PROCESS_SIZE = 100 * BLOCK_SIZE; // Update every 100 block
+public class SymmetricCrypto extends BaseCryptoAlgorithm {
+    private static int BLOCK_SIZE = 0;
+    private static int PROCESS_SIZE = 0; // Update every 100 block
     SecretKeySpec secretKeySpec;
     IvParameterSpec ivParameterSpec;
     ActionType actionType;
@@ -30,15 +30,15 @@ public class AES extends BaseCryptoAlgorithm {
     private JProgressBar fileProgressBar;
     private JProgressBar overallProgressBar;
 
-    public AES(String keyPath, String ivPath, ActionType actionType) {
+    public SymmetricCrypto(String algorithm, String keyPath, String ivPath, ActionType actionType) {
         try {
             byte[] key = FileUtils.readBinary(keyPath);
             byte[] iv  = FileUtils.readBinary(ivPath);
-            secretKeySpec = new SecretKeySpec(key, "AES");
+            secretKeySpec = new SecretKeySpec(key, algorithm);
             ivParameterSpec = new IvParameterSpec(iv);
             this.actionType = actionType;
 
-            cipher = Cipher.getInstance("AES/CBC/PKCS5PADDING");
+            cipher = Cipher.getInstance(algorithm + "/CBC/PKCS5PADDING");
             switch (actionType) {
                 case ENCRYPT:
                     cipher.init(Cipher.ENCRYPT_MODE, secretKeySpec, ivParameterSpec);
@@ -47,6 +47,15 @@ public class AES extends BaseCryptoAlgorithm {
                     cipher.init(Cipher.DECRYPT_MODE, secretKeySpec, ivParameterSpec);
                     break;
             }
+            switch (algorithm) {
+                case "AES":
+                    BLOCK_SIZE = 16;
+                    break;
+                case "DES":
+                    BLOCK_SIZE = 8;
+                    break;
+            }
+            PROCESS_SIZE = 100 * BLOCK_SIZE;
 
         } catch (Exception e) {
             e.printStackTrace();
@@ -61,13 +70,19 @@ public class AES extends BaseCryptoAlgorithm {
         String outPath;
         byte[] output; // output partially with the size of PROCESS_SIZE
 
+        int totalFile, processedFile;
+
         public Task(ActionType actionType, String inPath, String outPath) {
             this.actionType = actionType;
+
+            this.totalFile = 0;
+            this.processedFile = 0;
             this.fileNames = new ArrayList<>();
             if (FileUtils.isDirectory(inPath)) {
                 // list all files if inPath is a directory
                 try {
                     FileUtils.listAllSubFiles(fileNames, Paths.get(inPath), Paths.get(inPath).toString());
+                    totalFile = fileNames.size();
                 } catch (IOException e) {
                     e.printStackTrace();
                 }
@@ -129,7 +144,7 @@ public class AES extends BaseCryptoAlgorithm {
                 int numProcess = input.length / processBlockLength;
                 int currentOffset = 0;
                 while (numProcess >= 0) {
-                    // TODO Hacky: there's an extra 16 byte block every PROCESS_SIZE
+                    // TODO Reduce memory consumed from Array copy
                     if (numProcess == 0) {
                         // last PROCESS_SIZE block
                         output = action(Arrays.copyOfRange(input, currentOffset, input.length), true
@@ -153,6 +168,8 @@ public class AES extends BaseCryptoAlgorithm {
 
         @Override
         protected void process(List<String> chunks) {
+            processedFile++;
+            overallProgressBar.setValue((int) ((float) (processedFile) / totalFile * 100));
             for (String fileName : chunks) {
                 fileInfoArea.append("Processing " + fileName + "\n");
             }

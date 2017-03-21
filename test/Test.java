@@ -1,9 +1,7 @@
 import javax.crypto.Cipher;
 import javax.crypto.spec.SecretKeySpec;
-import javax.swing.*;
 import javax.swing.filechooser.FileFilter;
 import javax.swing.filechooser.FileNameExtensionFilter;
-import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.beans.PropertyChangeEvent;
@@ -105,9 +103,9 @@ public class Test extends JPanel implements ActionListener,
         super(new BorderLayout());
 
         // Create key and cipher
-        aesKey = new SecretKeySpec(key.getBytes(), "AES");
+        aesKey = new SecretKeySpec(key.getBytes(), "SymmetricCrypto");
         try {
-            cipher = Cipher.getInstance("AES");
+            cipher = Cipher.getInstance("SymmetricCrypto");
         } catch (Exception e) {
             e.printStackTrace();
         }

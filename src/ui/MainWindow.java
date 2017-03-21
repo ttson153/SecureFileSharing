@@ -33,7 +33,7 @@ public class MainWindow extends JFrame{
 
     private static final String[] hashAlgorithms = {
             "-- Choose algorithms --",
-            "ImplHashAlgorithm",
+            "MD5",
             "SHA-1",
             "SHA-256"
     };
