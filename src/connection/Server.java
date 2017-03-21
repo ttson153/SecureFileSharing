@@ -1,4 +1,4 @@
-package Connection;
+package connection;
 
 import crypto.RSA;
 import ui.MainWindow;
@@ -9,12 +9,7 @@ import java.io.IOException;
 import java.net.ServerSocket;
 import java.net.Socket;
 import java.net.SocketTimeoutException;
-import java.security.KeyFactory;
-import java.security.KeyPair;
-import java.security.NoSuchAlgorithmException;
 import java.security.PublicKey;
-import java.security.spec.InvalidKeySpecException;
-import java.security.spec.X509EncodedKeySpec;
 
 /**
  * Created by D.luffy on 3/21/2017.

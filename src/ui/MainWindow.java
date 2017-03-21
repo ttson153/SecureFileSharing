@@ -1,9 +1,11 @@
 package ui;
 
-import Connection.Client;
+import connection.Client;
 import crypto.ActionType;
+import ui.custom.HintText;
 
 import javax.swing.*;
+import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.io.File;
@@ -22,7 +24,7 @@ public class MainWindow extends JFrame{
     private static final String START_HASH_COMMAND = "Start Hash";
     private static final String SAVE_HASH_COMMAND = "Save Hash";
     private static final String START_CHECKSUM_COMMAND = "Start Checksum";
-    private static final String INIT_CONNECTION = "Init Connection";
+    private static final String INIT_CONNECTION = "Init connection";
     private static final String SEND_REQUEST = "Send Request";
 
     private static final String[] cryptoAlgorithms = {
@@ -75,8 +77,10 @@ public class MainWindow extends JFrame{
     private JFormattedTextField txtLocalPort;
     private JButton btn_init;
     private JTextField txt_key;
+    private JPanel keyExchangePanel;
     private Client MyConnection = null;
     private MainWindow window = this;
+    private HintText hintTextInput, hintTextKey, hintTextOutput;
 
 
     public void set_status(String status){
@@ -102,30 +106,34 @@ public class MainWindow extends JFrame{
             String inputHashPath, inputHashStringPath, hashAlgorithm, checksumPath, checksumString;
             switch (command) {
                 case BROWSE_INPUT_COMMAND:
-                    inputPath = MainWindowHelper.openFileChooser(cryptoPanel);
+                    inputPath = MainWindowHelper.openFileChooser(cryptoPanel, JFileChooser.FILES_AND_DIRECTORIES);
                     if (inputPath != null) {
+                        txt_input_path.setForeground(Color.BLACK);
+                        txt_output_path.setForeground(Color.BLACK);
                         txt_input_path.setText(inputPath);
-
                         // set default output path
                         txt_output_path.setText(inputPath.substring(0, inputPath.lastIndexOf(File.separator) + 1));
                         pack();
                     }
                     break;
                 case BROWSE_KEY_COMMAND:
-                    keyPath = MainWindowHelper.openFileChooser(cryptoPanel);
+                    keyPath = MainWindowHelper.openFileChooser(cryptoPanel, JFileChooser.FILES_ONLY);
                     if (keyPath != null) {
+                        txt_key_path.setForeground(Color.BLACK);
                         txt_key_path.setText(keyPath);
                     }
                     break;
                 case BROWSE_OUTPUT_COMMAND:
-                    outputPath = MainWindowHelper.openFileChooser(cryptoPanel);
+                    outputPath = MainWindowHelper.openFileChooser(cryptoPanel, JFileChooser.DIRECTORIES_ONLY);
                     if (outputPath != null) {
+                        hintTextOutput.setGhostColor(Color.BLACK);
+                        txt_output_path.setForeground(Color.BLACK);
                         txt_output_path.setText(outputPath + File.separator);
                     }
                     break;
 
                 case BROWSE_HASH_INPUT_COMMAND:
-                    inputHashPath = MainWindowHelper.openFileChooser(checkSumPanel);
+                    inputHashPath = MainWindowHelper.openFileChooser(checkSumPanel, JFileChooser.FILES_ONLY);
                     if (inputHashPath != null) {
                         txt_input_hash.setText(inputHashPath);
                         // reset hash output
@@ -134,7 +142,7 @@ public class MainWindow extends JFrame{
                     break;
 
                 case BROWSE_HASH_STRING_COMMAND:
-                    inputHashStringPath = MainWindowHelper.openFileChooser(checkSumPanel);
+                    inputHashStringPath = MainWindowHelper.openFileChooser(checkSumPanel, JFileChooser.FILES_ONLY);
                     if (inputHashStringPath != null) {
                         txt_checksum_path.setText(inputHashStringPath);
                     }
@@ -151,9 +159,13 @@ public class MainWindow extends JFrame{
                         actionType = ActionType.DECRYPT;
                     }
 
-                    MainWindowController.performCrypto(cryptoAlgorithm, actionType,
-                            txtFileInfo, fileProgressBar, overallProgressBar,
-                            inputPath, keyPath, outputPath);
+                    if (!cryptoAlgorithm.equals(cryptoAlgorithms[0])) {
+                        MainWindowController.performCrypto(cryptoAlgorithm, actionType,
+                                txtFileInfo, fileProgressBar, overallProgressBar,
+                                inputPath, keyPath, outputPath);
+                    } else {
+                        JOptionPane.showMessageDialog(cryptoPanel, "Please choose an algorithm");
+                    }
                     break;
 
                 case START_HASH_COMMAND:
@@ -161,9 +173,13 @@ public class MainWindow extends JFrame{
                     inputHashPath = txt_input_hash.getText();
                     hashAlgorithm = String.valueOf(hash_method_combo_box.getSelectedItem());
 
-                    MainWindowController.performHash(hashAlgorithm,
-                            txt_hash_output,
-                            inputHashPath);
+                    if (!hashAlgorithm.equals(hashAlgorithms[0])) {
+                        MainWindowController.performHash(hashAlgorithm,
+                                txt_hash_output,
+                                inputHashPath);
+                    } else {
+                        JOptionPane.showMessageDialog(checkSumPanel, "Please choose an algorithm");
+                    }
                     break;
 
                 case SAVE_HASH_COMMAND:
@@ -171,9 +187,13 @@ public class MainWindow extends JFrame{
                     inputHashPath = txt_input_hash.getText();
                     hashAlgorithm = String.valueOf(hash_method_combo_box.getSelectedItem());
 
-                    MainWindowController.performSaveHash(hashAlgorithm,
-                            txt_hash_output,
-                            inputHashPath);
+                    if (!hashAlgorithm.equals(hashAlgorithms[0])) {
+                        MainWindowController.performSaveHash(hashAlgorithm,
+                                txt_hash_output,
+                                inputHashPath);
+                    } else {
+                        JOptionPane.showMessageDialog(checkSumPanel, "Please choose an algorithm");
+                    }
                     break;
 
                 case START_CHECKSUM_COMMAND:
@@ -182,19 +202,23 @@ public class MainWindow extends JFrame{
                     checksumString = txt_checksum_string.getText();
                     hashAlgorithm = String.valueOf(hash_method_combo_box.getSelectedItem());
 
-                    // inform user just select either path or string
-                    if (checksumPath.equals("") && checksumString.equals("")) {
-                        JOptionPane.showMessageDialog(checkSumPanel, "Please choose a path or a string");
-                    } else if (!checksumPath.equals("") && !checksumString.equals("")) {
-                        JOptionPane.showMessageDialog(checkSumPanel, "Please choose either path or string");
-                    } else if (!checksumPath.equals("")) {
-                        MainWindowController.performChecksum(hashAlgorithm,
-                                txt_hash_output, checkSumPanel,
-                                inputHashPath, checksumPath, true);
-                    } else if (!checksumString.equals("")) {
-                        MainWindowController.performChecksum(hashAlgorithm,
-                                txt_hash_output, checkSumPanel,
-                                inputHashPath, checksumString, false);
+                    if (!hashAlgorithm.equals(hashAlgorithms[0])) {
+                        // inform user just select either path or string
+                        if (checksumPath.equals("") && checksumString.equals("")) {
+                            JOptionPane.showMessageDialog(checkSumPanel, "Please choose a path or a string");
+                        } else if (!checksumPath.equals("") && !checksumString.equals("")) {
+                            JOptionPane.showMessageDialog(checkSumPanel, "Please choose either path or string");
+                        } else if (!checksumPath.equals("")) {
+                            MainWindowController.performChecksum(hashAlgorithm,
+                                    txt_hash_output, checkSumPanel,
+                                    inputHashPath, checksumPath, true);
+                        } else if (!checksumString.equals("")) {
+                            MainWindowController.performChecksum(hashAlgorithm,
+                                    txt_hash_output, checkSumPanel,
+                                    inputHashPath, checksumString, false);
+                        }
+                    } else {
+                        JOptionPane.showMessageDialog(checkSumPanel, "Please choose an algorithm");
                     }
 
                     break;
@@ -253,6 +277,10 @@ public class MainWindow extends JFrame{
         // POPULATE COMBOBOX
         crypto_method_combo_box.setModel(new DefaultComboBoxModel(cryptoAlgorithms));
         hash_method_combo_box.setModel(new DefaultComboBoxModel(hashAlgorithms));
+
+        hintTextInput = new HintText(txt_input_path, "File or Folder to be processed");
+        hintTextKey = new HintText(txt_key_path, "Path to key file");
+        hintTextOutput = new HintText(txt_output_path, "Destination Folder");
     }
 
     public MainWindow() {
